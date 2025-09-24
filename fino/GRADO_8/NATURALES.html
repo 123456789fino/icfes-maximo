@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Ciencias Naturales - Grado 8</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>⚗️ Ciencias Naturales y Física - Grado 8</h1>
+        <p style="text-align: center; color: rgba(255,255,255,0.9);">
+            <a href="menu.html" style="color: #74b9ff; text-decoration: none; font-weight: 600;">⬅ Volver al menú principal</a>
+        </p>
+
+        <div class="question">
+            <p>1. La velocidad es una magnitud:</p>
+            <button onclick="checkAnswer(this, true, 'Tiene módulo y dirección')">A. Vectorial</button>
+            <button onclick="checkAnswer(this, false)">B. Escalar</button>
+            <button onclick="checkAnswer(this, false)">C. Fundamental</button>
+        </div>
+
+        <div class="question">
+            <p>2. En la ecuación química 2H₂ + O₂ → 2H₂O, los coeficientes indican:</p>
+            <button onclick="checkAnswer(this, true, 'Número de moléculas que participan')">A. Número de moléculas</button>
+            <button onclick="checkAnswer(this, false)">B. Número de átomos</button>
+            <button onclick="checkAnswer(this, false)">C. Masa molecular</button>
+        </div>
+
+        <div class="question">
+            <p>3. Los organelos celulares encargados de la respiración celular son:</p>
+            <button onclick="checkAnswer(this, true, 'Producen ATP mediante respiración celular')">A. Mitocondrias</button>
+            <button onclick="checkAnswer(this, false)">B. Cloroplastos</button>
+            <button onclick="checkAnswer(this, false)">C. Ribosomas</button>
+        </div>
+
+        <div class="question">
+            <p>4. La fuerza de gravedad entre dos objetos depende de:</p>
+            <button onclick="checkAnswer(this, true, 'Ley de gravitación universal: F = G(m1m2)/r²')">A. Sus masas y la distancia</button>
+            <button onclick="checkAnswer(this, false)">B. Solo sus masas</button>
+            <button onclick="checkAnswer(this, false)">C. Solo la distancia</button>
+        </div>
+
+        <div class="question">
+            <p>5. El pH de una solución neutra es:</p>
+            <button onclick="checkAnswer(this, true, 'Equilibrio entre H+ y OH-')">A. 7</button>
+            <button onclick="checkAnswer(this, false)">B. 0</button>
+            <button onclick="checkAnswer(this, false)">C. 14</button>
+        </div>
+
+        <div class="question">
+            <p>6. La mitosis produce células:</p>
+            <button onclick="checkAnswer(this, true, 'Mismo número cromosómico que la original')">A. Diploides idénticas</button>
+            <button onclick="checkAnswer(this, false)">B. Haploides diferentes</button>
+            <button onclick="checkAnswer(this, false)">C. Con mutaciones</button>
+        </div>
+
+        <div class="question">
+            <p>7. La energía cinética depende de:</p>
+            <button onclick="checkAnswer(this, true, 'Ec = (1/2)mv²')">A. Masa y velocidad</button>
+            <button onclick="checkAnswer(this, false)">B. Solo la masa</button>
+            <button onclick="checkAnswer(this, false)">C. Masa y altura</button>
+        </div>
+
+        <div class="question">
+            <p>8. Los elementos del mismo grupo en la tabla periódica tienen:</p>
+            <button onclick="checkAnswer(this, true, 'Mismos electrones de valencia')">A. Propiedades químicas similares</button>
+            <button onclick="checkAnswer(this, false)">B. Igual masa atómica</button>
+            <button onclick="checkAnswer(this, false)">C. Mismo número de neutrones</button>
+        </div>
+
+        <div class="question">
+            <p>9. La fotores piración ocurre principalmente en:</p>
+            <button onclick="checkAnswer(this, true, 'Tejidos verdes con cloroplastos')">A. Las hojas</button>
+            <button onclick="checkAnswer(this, false)">B. Las raíces</button>
+            <button onclick="checkAnswer(this, false)">C. El tallo</button>
+        </div>
+
+        <div class="question">
+            <p>10. Según la segunda ley de Newton:</p>
+            <button onclick="checkAnswer(this, true, 'F = ma (fuerza igual a masa por aceleración)')">A. F = ma</button>
+            <button onclick="checkAnswer(this, false)">B. F = mv</button>
+            <button onclick="checkAnswer(this, false)">C. F = m/a</button>
+        </div>
+
+        <div class="question">
+            <p>11. Un enlace iónico se forma entre:</p>
+            <button onclick="checkAnswer(this, true, 'Metal cede electrones, no metal los acepta')">A. Metal y no metal</button>
+            <button onclick="checkAnswer(this, false)">B. Dos metales</button>
+            <button onclick="checkAnswer(this, false)">C. Dos no metales</button>
+        </div>
+
+        <div class="question">
+            <p>12. Los genes se encuentran en:</p>
+            <button onclick="checkAnswer(this, true, 'ADN organizado en cromosomas')">A. Los cromosomas</button>
+            <button onclick="checkAnswer(this, false)">B. Las mitocondrias</button>
+            <button onclick="checkAnswer(this, false)">C. El citoplasma</button>
+        </div>
+
+        <div class="question">
+            <p>13. La potencia se mide en:</p>
+            <button onclick="checkAnswer(this, true, 'Unidad de potencia en el SI')">A. Watts</button>
+            <button onclick="checkAnswer(this, false)">B. Joules</button>
+            <button onclick="checkAnswer(this, false)">C. Newtons</button>
+        </div>
+
+        <div class="question">
+            <p>14. Los isótopos tienen:</p>
+            <button onclick="checkAnswer(this, true, 'Mismo número atómico, diferente masa')">A. Igual número de protones</button>
+            <button onclick="checkAnswer(this, false)">B. Igual número de neutrones</button>
+            <button onclick="checkAnswer(this, false)">C. Igual masa atómica</button>
+        </div>
+
+        <div class="question">
+            <p>15. En un ecosistema, los productores son:</p>
+            <button onclick="checkAnswer(this, true, 'Realizan fotosíntesis')">A. Las plantas</button>
+            <button onclick="checkAnswer(this, false)">B. Los herbívoros</button>
+            <button onclick="checkAnswer(this, false)">C. Los carnívoros</button>
+        </div>
+
+        <div class="question">
+            <p>16. La resistencia eléctrica se mide en:</p>
+            <button onclick="checkAnswer(this, true, 'Unidad de resistencia en el SI')">A. Ohmios</button>
+            <button onclick="checkAnswer(this, false)">B. Amperios</button>
+            <button onclick="checkAnswer(this, false)">C. Voltios</button>
+        </div>
+
+        <div class="question">
+            <p>17. La molécula de agua (H₂O) tiene:</p>
+            <button onclick="checkAnswer(this, true, 'Dos enlaces covalentes H-O')">A. Enlaces covalentes</button>
+            <button onclick="checkAnswer(this, false)">B. Enlaces iónicos</button>
+            <button onclick="checkAnswer(this, false)">C. Enlaces metálicos</button>
+        </div>
+
+        <div class="question">
+            <p>18. La meiosis produce:</p>
+            <button onclick="checkAnswer(this, true, 'Células con la mitad de cromosomas')">A. Gametos haploides</button>
+            <button onclick="checkAnswer(this, false)">B. Células diploides</button>
+            <button onclick="checkAnswer(this, false)">C. Células idénticas</button>
+        </div>
+
+        <div class="question">
+            <p>19. El punto de fusión del hielo es:</p>
+            <button onclick="checkAnswer(this, true, 'Temperatura de cambio de fase')">A. 0°C</button>
+            <button onclick="checkAnswer(this, false)">B. 100°C</button>
+            <button onclick="checkAnswer(this, false)">C. -10°C</button>
+        </div>
+
+        <div class="question">
+            <p>20. Los anticuerpos son producidos por:</p>
+            <button onclick="checkAnswer(this, true, 'Parte del sistema inmune')">A. Los linfocitos B</button>
+            <button onclick="checkAnswer(this, false)">B. Los glóbulos rojos</button>
+            <button onclick="checkAnswer(this, false)">C. Las plaquetas</button>
+        </div>
+
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar Naturales</button>
+            <button onclick="goToMenu()" class="restart-button" style="background: linear-gradient(145deg, #6c5ce7 0%, #a29bfe 100%) !important;">📚 Menú Principal</button>
+        </div>
+    </div>
+    <script src="preguntas.js"></script>
+</body>
+</html>

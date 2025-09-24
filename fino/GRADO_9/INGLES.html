@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>English Pre-University - Grade 9</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>🇺🇸 English Pre-University Advanced - Grade 9</h1>
+        <p style="text-align: center; color: rgba(255,255,255,0.9);">
+            <a href="menu.html" style="color: #4facfe; text-decoration: none; font-weight: 600;">⬅ Menú Principal</a>
+        </p>
+
+        <div class="question">
+            <p>1. Choose the correct conditional: "If I ___ rich, I would travel the world."</p>
+            <button onclick="checkAnswer(this, true, 'Second conditional uses were/was for hypothetical situations', 'advanced')">A. were</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. am</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. will be</button>
+        </div>
+
+        <div class="question">
+            <p>2. The passive voice of "They have built a new bridge" is:</p>
+            <button onclick="checkAnswer(this, true, 'Present perfect passive: has/have + been + past participle', 'advanced')">A. A new bridge has been built</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. A new bridge is being built</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. A new bridge was built</button>
+        </div>
+
+        <div class="question">
+            <p>3. In Shakespeare's "Hamlet", the famous soliloquy begins with:</p>
+            <button onclick="checkAnswer(this, true, 'Most famous line from Hamlet\'s soliloquy in Act 3, Scene 1', 'advanced')">A. "To be or not to be, that is the question"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "All the world\'s a stage"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "Romeo, Romeo, wherefore art thou Romeo"</button>
+        </div>
+
+        <div class="question">
+            <p>4. The subjunctive mood is used in: "I suggest that he ___ early."</p>
+            <button onclick="checkAnswer(this, true, 'Subjunctive uses base form after suggest/demand/insist', 'advanced')">A. arrive</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. arrives</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. arrived</button>
+        </div>
+
+        <div class="question">
+            <p>5. Which is an example of alliteration?</p>
+            <button onclick="checkAnswer(this, true, 'Alliteration: repetition of initial consonant sounds', 'advanced')">A. "Peter Piper picked a peck of pickled peppers"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "The cat sat on the mat"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "Time flies like an arrow"</button>
+        </div>
+
+        <div class="question">
+            <p>6. The correct reported speech for "I am studying" is "She said she ___":</p>
+            <button onclick="checkAnswer(this, true, 'Present continuous becomes past continuous in reported speech', 'advanced')">A. was studying</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. is studying</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. studies</button>
+        </div>
+
+        <div class="question">
+            <p>7. In academic writing, which transitional phrase shows contrast?</p>
+            <button onclick="checkAnswer(this, true, 'Nevertheless shows contrast while maintaining formal tone', 'advanced')">A. Nevertheless</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Furthermore</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Consequently</button>
+        </div>
+
+        <div class="question">
+            <p>8. The literary device in "The wind whispered through the trees" is:</p>
+            <button onclick="checkAnswer(this, true, 'Personification gives human qualities to non-human things', 'advanced')">A. Personification</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Metaphor</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Simile</button>
+        </div>
+
+        <div class="question">
+            <p>9. The correct form is: "I wish I ___ more time to study."</p>
+            <button onclick="checkAnswer(this, true, 'Wish + past tense for present unreal situations', 'advanced')">A. had</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. have</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. will have</button>
+        </div>
+
+        <div class="question">
+            <p>10. Which sentence uses the past perfect correctly?</p>
+            <button onclick="checkAnswer(this, true, 'Past perfect shows action completed before another past action', 'advanced')">A. "By the time I arrived, they had already left."</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "I had go to the store yesterday."</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "She had been go there many times."</button>
+        </div>
+
+        <div class="question">
+            <p>11. In "The Great Gatsby", the green light symbolizes:</p>
+            <button onclick="checkAnswer(this, true, 'The green light represents Gatsby\'s hopes and dreams for the future', 'advanced')">A. Hope and the American Dream</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Money and greed</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Nature and peace</button>
+        </div>
+
+        <div class="question">
+            <p>12. The gerund form is used as subject in:</p>
+            <button onclick="checkAnswer(this, true, 'Swimming is a gerund acting as subject of the sentence', 'advanced')">A. "Swimming is excellent exercise."</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "I enjoy to swim."</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "She swam quickly."</button>
+        </div>
+
+        <div class="question">
+            <p>13. Which demonstrates correct parallel structure?</p>
+            <button onclick="checkAnswer(this, true, 'Parallel structure: reading, writing, arithmetic (all gerunds)', 'advanced')">A. "Reading, writing, and arithmetic"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "Reading, to write, and arithmetic"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "To read, writing, and arithmetic"</button>
+        </div>
+
+        <div class="question">
+            <p>14. The correct question tag for "You can help me" is:</p>
+            <button onclick="checkAnswer(this, true, 'Positive statement takes negative tag; can becomes can\'t', 'advanced')">A. "can't you?"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "can you?"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "don't you?"</button>
+        </div>
+
+        <div class="question">
+            <p>15. In formal essays, which is the best thesis statement?</p>
+            <button onclick="checkAnswer(this, true, 'Clear, specific, arguable thesis with three supporting points', 'advanced')">A. "Social media negatively impacts teenagers through cyberbullying, reduced face-to-face interaction, and decreased academic performance."</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "Social media is bad."</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "This essay will discuss social media."</button>
+        </div>
+
+        <div class="question">
+            <p>16. The etymology of "telephone" comes from Greek meaning:</p>
+            <button onclick="checkAnswer(this, true, 'Tele = far/distant, phone = sound/voice in Greek', 'advanced')">A. "far sound"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. "voice box"</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. "speaking device"</button>
+        </div>
+
+        <div class="question">
+            <p>17. The mood in Edgar Allan Poe's "The Raven" is primarily:</p>
+            <button onclick="checkAnswer(this, true, 'The poem creates a melancholic, sorrowful atmosphere', 'advanced')">A. Melancholic</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Joyful</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Humorous</button>
+        </div>
+
+        <div class="question">
+            <p>18. "Neither John nor Mary ___ coming to the party."</p>
+            <button onclick="checkAnswer(this, true, 'Neither...nor: verb agrees with nearest subject (Mary = singular)', 'advanced')">A. is</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. are</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. were</button>
+        </div>
+
+        <div class="question">
+            <p>19. The rhetorical device in "Ask not what your country can do for you" is:</p>
+            <button onclick="checkAnswer(this, true, 'Chiasmus: reversal of grammatical structures for effect', 'advanced')">A. Chiasmus</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Metaphor</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Hyperbole</button>
+        </div>
+
+        <div class="question">
+            <p>20. In MLA format, the correct in-text citation is:</p>
+            <button onclick="checkAnswer(this, true, 'MLA uses author\'s last name and page number in parentheses', 'advanced')">A. (Smith 45)</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. [Smith, 2023, p. 45]</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Smith (2023, p. 45)</button>
+        </div>
+
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Restart English</button>
+            <button onclick="goToMenu()" class="restart-button">🏠 Elite Menu</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas - Grado 6</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>🔢 Matemáticas - Grado 6</h1>
+        <p style="text-align: center; color: #7f8c8d;">
+            <a href="menu.html" style="color: #3498db; text-decoration: none;">⬅ Volver al menú</a>
+        </p>
+
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>1. ¿Cuánto es 8 × 7?</p>
+            <button onclick="checkAnswer(this, true)">A. 56</button>
+            <button onclick="checkAnswer(this, false)">B. 49</button>
+            <button onclick="checkAnswer(this, false)">C. 64</button>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>2. ¿Cuál es el resultado de 45 ÷ 5?</p>
+            <button onclick="checkAnswer(this, true)">A. 9</button>
+            <button onclick="checkAnswer(this, false)">B. 8</button>
+            <button onclick="checkAnswer(this, false)">C. 7</button>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p>3. ¿Qué fracción equivale a 0,5?</p>
+            <button onclick="checkAnswer(this, true)">A. 1/2</button>
+            <button onclick="checkAnswer(this, false)">B. 1/4</button>
+            <button onclick="checkAnswer(this, false)">C. 3/4</button>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p>4. ¿Cuántos lados tiene un hexágono?</p>
+            <button onclick="checkAnswer(this, true)">A. 6</button>
+            <button onclick="checkAnswer(this, false)">B. 8</button>
+            <button onclick="checkAnswer(this, false)">C. 5</button>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p>5. ¿Cuál es el perímetro de un cuadrado cuyos lados miden 4 cm?</p>
+            <button onclick="checkAnswer(this, true)">A. 16 cm</button>
+            <button onclick="checkAnswer(this, false)">B. 8 cm</button>
+            <button onclick="checkAnswer(this, false)">C. 12 cm</button>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="question">
+            <p>6. ¿Qué número falta en la secuencia: 5, 10, 15, __, 25?</p>
+            <button onclick="checkAnswer(this, true)">A. 20</button>
+            <button onclick="checkAnswer(this, false)">B. 22</button>
+            <button onclick="checkAnswer(this, false)">C. 18</button>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question">
+            <p>7. Si una pizza se divide en 8 partes y te comes 3, ¿qué fracción queda?</p>
+            <button onclick="checkAnswer(this, true)">A. 5/8</button>
+            <button onclick="checkAnswer(this, false)">B. 3/8</button>
+            <button onclick="checkAnswer(this, false)">C. 4/8</button>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="question">
+            <p>8. ¿Cuál es el área de un rectángulo de 3 m de largo por 2 m de ancho?</p>
+            <button onclick="checkAnswer(this, true)">A. 6 m²</button>
+            <button onclick="checkAnswer(this, false)">B. 5 m²</button>
+            <button onclick="checkAnswer(this, false)">C. 10 m²</button>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="question">
+            <p>9. ¿Qué número es el menor: 3/4, 2/3 o 1/2?</p>
+            <button onclick="checkAnswer(this, true)">A. 1/2</button>
+            <button onclick="checkAnswer(this, false)">B. 2/3</button>
+            <button onclick="checkAnswer(this, false)">C. 3/4</button>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question">
+            <p>10. ¿Cuántos centímetros hay en 2 metros?</p>
+            <button onclick="checkAnswer(this, true)">A. 200</button>
+            <button onclick="checkAnswer(this, false)">B. 20</button>
+            <button onclick="checkAnswer(this, false)">C. 2000</button>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="question">
+            <p>11. ¿Cuál es el resultado de 12² (doce al cuadrado)?</p>
+            <button onclick="checkAnswer(this, true)">A. 144</button>
+            <button onclick="checkAnswer(this, false)">B. 124</button>
+            <button onclick="checkAnswer(this, false)">C. 24</button>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="question">
+            <p>12. ¿Cuántos minutos hay en 3 horas?</p>
+            <button onclick="checkAnswer(this, true)">A. 180</button>
+            <button onclick="checkAnswer(this, false)">B. 120</button>
+            <button onclick="checkAnswer(this, false)">C. 240</button>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="question">
+            <p>13. ¿Cuál es el mínimo común múltiplo de 4 y 6?</p>
+            <button onclick="checkAnswer(this, true)">A. 12</button>
+            <button onclick="checkAnswer(this, false)">B. 10</button>
+            <button onclick="checkAnswer(this, false)">C. 24</button>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="question">
+            <p>14. ¿Cuánto es 25% de 80?</p>
+            <button onclick="checkAnswer(this, true)">A. 20</button>
+            <button onclick="checkAnswer(this, false)">B. 25</button>
+            <button onclick="checkAnswer(this, false)">C. 15</button>
+        </div>
+
+        <!-- Pregunta 15 -->
+        <div class="question">
+            <p>15. ¿Qué ángulo mide exactamente 90 grados?</p>
+            <button onclick="checkAnswer(this, true)">A. Ángulo recto</button>
+            <button onclick="checkAnswer(this, false)">B. Ángulo agudo</button>
+            <button onclick="checkAnswer(this, false)">C. Ángulo obtuso</button>
+        </div>
+
+        <!-- Pregunta 16 -->
+        <div class="question">
+            <p>16. ¿Cuánto vale X en la ecuación: X + 15 = 23?</p>
+            <button onclick="checkAnswer(this, true)">A. 8</button>
+            <button onclick="checkAnswer(this, false)">B. 38</button>
+            <button onclick="checkAnswer(this, false)">C. 7</button>
+        </div>
+
+        <!-- Pregunta 17 -->
+        <div class="question">
+            <p>17. ¿Cuál es la suma de los ángulos internos de un triángulo?</p>
+            <button onclick="checkAnswer(this, true)">A. 180°</button>
+            <button onclick="checkAnswer(this, false)">B. 360°</button>
+            <button onclick="checkAnswer(this, false)">C. 90°</button>
+        </div>
+
+        <!-- Pregunta 18 -->
+        <div class="question">
+            <p>18. Si 5 manzanas cuestan $1500, ¿cuánto cuestan 8 manzanas?</p>
+            <button onclick="checkAnswer(this, true)">A. $2400</button>
+            <button onclick="checkAnswer(this, false)">B. $2000</button>
+            <button onclick="checkAnswer(this, false)">C. $2600</button>
+        </div>
+
+        <!-- Pregunta 19 -->
+        <div class="question">
+            <p>19. ¿Cuál es el valor de π (pi) aproximadamente?</p>
+            <button onclick="checkAnswer(this, true)">A. 3.14</button>
+            <button onclick="checkAnswer(this, false)">B. 3.41</button>
+            <button onclick="checkAnswer(this, false)">C. 2.14</button>
+        </div>
+
+        <!-- Pregunta 20 -->
+        <div class="question">
+            <p>20. ¿Cuántas caras tiene un cubo?</p>
+            <button onclick="checkAnswer(this, true)">A. 6</button>
+            <button onclick="checkAnswer(this, false)">B. 8</button>
+            <button onclick="checkAnswer(this, false)">C. 12</button>
+        </div>
+
+        <!-- Resultado final -->
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar cuestionario</button>
+            <button onclick="goToMenu()" class="restart-button" style="background-color: #9b59b6 !important;">📚 Volver al menú</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

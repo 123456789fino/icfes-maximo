@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Matemáticas Pre-Cálculo - Grado 9</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>🔍 Matemáticas Pre-Cálculo Avanzado - Grado 9</h1>
+        <p style="text-align: center; color: rgba(255,255,255,0.9);">
+            <a href="menu.html" style="color: #4facfe; text-decoration: none; font-weight: 600;">⬅ Menú Principal</a>
+        </p>
+
+        <div class="question">
+            <p>1. Resuelve el sistema: 2x + 3y = 12, 4x - y = 5</p>
+            <button onclick="checkAnswer(this, true, 'Método de sustitución: x = 3, y = 2', 'advanced')">A. x = 3, y = 2</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. x = 2, y = 3</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. x = 1, y = 4</button>
+        </div>
+
+        <div class="question">
+            <p>2. Si f(x) = x² - 4x + 3, ¿cuál es f(-2)?</p>
+            <button onclick="checkAnswer(this, true, 'f(-2) = (-2)² - 4(-2) + 3 = 4 + 8 + 3 = 15', 'advanced')">A. 15</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. -5</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 11</button>
+        </div>
+
+        <div class="question">
+            <p>3. La ecuación de la recta que pasa por (2,3) con pendiente m = -1 es:</p>
+            <button onclick="checkAnswer(this, true, 'Forma punto-pendiente: y - 3 = -1(x - 2), simplificando: y = -x + 5', 'advanced')">A. y = -x + 5</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. y = x - 1</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. y = -x - 1</button>
+        </div>
+
+        <div class="question">
+            <p>4. Si sen(θ) = 3/5 y θ está en el primer cuadrante, entonces cos(θ) =</p>
+            <button onclick="checkAnswer(this, true, 'Teorema de Pitágoras: cos²(θ) + sen²(θ) = 1, cos(θ) = 4/5', 'advanced')">A. 4/5</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 5/3</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 3/4</button>
+        </div>
+
+        <div class="question">
+            <p>5. El dominio de la función f(x) = √(x - 2) es:</p>
+            <button onclick="checkAnswer(this, true, 'Para que la raíz sea real: x - 2 ≥ 0, por tanto x ≥ 2', 'advanced')">A. x ≥ 2</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. x > 0</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Todos los reales</button>
+        </div>
+
+        <div class="question">
+            <p>6. La suma de una progresión aritmética con a₁ = 5, d = 3, n = 10 es:</p>
+            <button onclick="checkAnswer(this, true, 'Sₙ = n/2[2a₁ + (n-1)d] = 10/2[10 + 27] = 185', 'advanced')">A. 185</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 175</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 195</button>
+        </div>
+
+        <div class="question">
+            <p>7. Si log₂(x) = 3, entonces x =</p>
+            <button onclick="checkAnswer(this, true, 'Por definición de logaritmo: 2³ = x, por tanto x = 8', 'advanced')">A. 8</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 6</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 9</button>
+        </div>
+
+        <div class="question">
+            <p>8. La fórmula cuadrática para ax² + bx + c = 0 es:</p>
+            <button onclick="checkAnswer(this, true, 'Fórmula general para ecuaciones cuadráticas', 'advanced')">A. x = (-b ± √(b²-4ac))/2a</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. x = (b ± √(b²+4ac))/2a</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. x = (-b ± √(b²+4ac))/a</button>
+        </div>
+
+        <div class="question">
+            <p>9. En una distribución normal, aproximadamente qué porcentaje de datos está dentro de 2 desviaciones estándar:</p>
+            <button onclick="checkAnswer(this, true, 'Regla empírica: 68% en 1σ, 95% en 2σ, 99.7% en 3σ', 'advanced')">A. 95%</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 68%</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 99.7%</button>
+        </div>
+
+        <div class="question">
+            <p>10. La derivada de f(x) = 3x² + 2x - 1 es:</p>
+            <button onclick="checkAnswer(this, true, 'Regla de potencias: d/dx[xⁿ] = nxⁿ⁻¹', 'advanced')">A. f'(x) = 6x + 2</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. f'(x) = 6x - 1</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. f'(x) = 3x + 2</button>
+        </div>
+
+        <div class="question">
+            <p>11. El valor de lim(x→∞) (1 + 1/x)ˣ es:</p>
+            <button onclick="checkAnswer(this, true, 'Límite notable que define el número e', 'advanced')">A. e ≈ 2.718</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 1</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. ∞</button>
+        </div>
+
+        <div class="question">
+            <p>12. En el círculo unit ario, tan(π/4) =</p>
+            <button onclick="checkAnswer(this, true, 'tan(45°) = sen(45°)/cos(45°) = (√2/2)/(√2/2) = 1', 'advanced')">A. 1</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. √2/2</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. √3/3</button>
+        </div>
+
+        <div class="question">
+            <p>13. La probabilidad de obtener exactamente 2 caras al lanzar una moneda 4 veces es:</p>
+            <button onclick="checkAnswer(this, true, 'Distribución binomial: C(4,2) × (1/2)⁴ = 6/16 = 3/8', 'advanced')">A. 3/8</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 1/4</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 1/2</button>
+        </div>
+
+        <div class="question">
+            <p>14. Si z = 3 + 4i, entonces |z| (módulo de z) es:</p>
+            <button onclick="checkAnswer(this, true, '|z| = √(a² + b²) = √(9 + 16) = 5', 'advanced')">A. 5</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 7</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 25</button>
+        </div>
+
+        <div class="question">
+            <p>15. La ecuación paramétrica de una recta que pasa por (1,2) con vector dirección (3,-1) es:</p>
+            <button onclick="checkAnswer(this, true, 'Forma paramétrica: (x,y) = (1,2) + t(3,-1)', 'advanced')">A. x = 1 + 3t, y = 2 - t</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. x = 3 + t, y = -1 + 2t</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. x = 1 - 3t, y = 2 + t</button>
+        </div>
+
+        <div class="question">
+            <p>16. El número de permutaciones de 5 objetos tomados de 3 en 3 es:</p>
+            <button onclick="checkAnswer(this, true, 'P(n,r) = n!/(n-r)! = 5!/(5-3)! = 5!/2! = 60', 'advanced')">A. 60</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 10</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 15</button>
+        </div>
+
+        <div class="question">
+            <p>17. La integral indefinida de f(x) = 2x + 3 es:</p>
+            <button onclick="checkAnswer(this, true, '∫(2x + 3)dx = x² + 3x + C', 'advanced')">A. x² + 3x + C</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 2x² + 3x + C</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. x² + C</button>
+        </div>
+
+        <div class="question">
+            <p>18. En coordenadas polares, el punto (3, π/6) en cartesianas es:</p>
+            <button onclick="checkAnswer(this, true, 'x = r•cos(θ) = 3•cos(π/6) = 3√3/2, y = r•sen(θ) = 3/2', 'advanced')">A. (3√3/2, 3/2)</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. (3/2, 3√3/2)</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. (√3, 3)</button>
+        </div>
+
+        <div class="question">
+            <p>19. La matriz inversa de A = [[2,1],[3,2]] es:</p>
+            <button onclick="checkAnswer(this, true, 'A⁻¹ = (1/det(A)) × adj(A), det(A) = 1, por tanto A⁻¹ = [[2,-1],[-3,2]]', 'advanced')">A. [[2,-1],[-3,2]]</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. [[2,3],[1,2]]</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. [[-2,1],[3,-2]]</button>
+        </div>
+
+        <div class="question">
+            <p>20. El límite de (sen(x))/x cuando x tiende a 0 es:</p>
+            <button onclick="checkAnswer(this, true, 'Límite fundamental trignométrico', 'advanced')">A. 1</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 0</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. ∞</button>
+        </div>
+
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar Matemáticas</button>
+            <button onclick="goToMenu()" class="restart-button">🏠 Menú Élite</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

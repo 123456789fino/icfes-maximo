@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Español - Grado 6</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>📖 Español y Literatura - Grado 6</h1>
+        <p style="text-align: center; color: #7f8c8d;">
+            <a href="menu.html" style="color: #3498db; text-decoration: none;">⬅ Volver al menú</a>
+        </p>
+
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>1. ¿Cuál es la sílaba tónica en la palabra "computadora"?</p>
+            <button onclick="checkAnswer(this, false)">A. com</button>
+            <button onclick="checkAnswer(this, false)">B. pu</button>
+            <button onclick="checkAnswer(this, true)">C. do</button>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question">
+            <p>2. ¿Qué tipo de palabra es "rápidamente"?</p>
+            <button onclick="checkAnswer(this, true)">A. Adverbio</button>
+            <button onclick="checkAnswer(this, false)">B. Adjetivo</button>
+            <button onclick="checkAnswer(this, false)">C. Sustantivo</button>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question">
+            <p>3. ¿Cuál es el sinónimo de "alegre"?</p>
+            <button onclick="checkAnswer(this, true)">A. Feliz</button>
+            <button onclick="checkAnswer(this, false)">B. Triste</button>
+            <button onclick="checkAnswer(this, false)">C. Cansado</button>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question">
+            <p>4. ¿Qué signo de puntuación se usa para hacer una pregunta?</p>
+            <button onclick="checkAnswer(this, true)">A. Signos de interrogación (?)</button>
+            <button onclick="checkAnswer(this, false)">B. Punto (.)</button>
+            <button onclick="checkAnswer(this, false)">C. Coma (,)</button>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question">
+            <p>5. ¿Cuál es el plural de "lápiz"?</p>
+            <button onclick="checkAnswer(this, true)">A. Lápices</button>
+            <button onclick="checkAnswer(this, false)">B. Lápizs</button>
+            <button onclick="checkAnswer(this, false)">C. Lápizes</button>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="question">
+            <p>6. En la oración "El gato duerme", ¿cuál es el sujeto?</p>
+            <button onclick="checkAnswer(this, true)">A. El gato</button>
+            <button onclick="checkAnswer(this, false)">B. duerme</button>
+            <button onclick="checkAnswer(this, false)">C. El</button>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question">
+            <p>7. ¿Qué tipo de texto es una receta de cocina?</p>
+            <button onclick="checkAnswer(this, true)">A. Instructivo</button>
+            <button onclick="checkAnswer(this, false)">B. Narrativo</button>
+            <button onclick="checkAnswer(this, false)">C. Descriptivo</button>
+        </div>
+
+        <!-- Pregunta 8 -->
+        <div class="question">
+            <p>8. ¿Cuál palabra lleva tilde?</p>
+            <button onclick="checkAnswer(this, true)">A. Café</button>
+            <button onclick="checkAnswer(this, false)">B. Papel</button>
+            <button onclick="checkAnswer(this, false)">C. Mesa</button>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="question">
+            <p>9. ¿Qué es una metáfora?</p>
+            <button onclick="checkAnswer(this, true)">A. Una comparación implícita entre dos elementos</button>
+            <button onclick="checkAnswer(this, false)">B. Una pregunta retórica</button>
+            <button onclick="checkAnswer(this, false)">C. Una descripción detallada</button>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question">
+            <p>10. ¿Cuál es el antónimo de "alto"?</p>
+            <button onclick="checkAnswer(this, true)">A. Bajo</button>
+            <button onclick="checkAnswer(this, false)">B. Grande</button>
+            <button onclick="checkAnswer(this, false)">C. Ancho</button>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="question">
+            <p>11. ¿En qué persona está conjugado el verbo en "Nosotros caminamos"?</p>
+            <button onclick="checkAnswer(this, true)">A. Primera persona del plural</button>
+            <button onclick="checkAnswer(this, false)">B. Segunda persona del plural</button>
+            <button onclick="checkAnswer(this, false)">C. Tercera persona del plural</button>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="question">
+            <p>12. ¿Qué función tienen los adjetivos?</p>
+            <button onclick="checkAnswer(this, true)">A. Describir o calificar sustantivos</button>
+            <button onclick="checkAnswer(this, false)">B. Indicar acciones</button>
+            <button onclick="checkAnswer(this, false)">C. Unir oraciones</button>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="question">
+            <p>13. ¿Cuál es el género de la palabra "problema"?</p>
+            <button onclick="checkAnswer(this, true)">A. Masculino</button>
+            <button onclick="checkAnswer(this, false)">B. Femenino</button>
+            <button onclick="checkAnswer(this, false)">C. Neutro</button>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="question">
+            <p>14. ¿Qué tipo de rima tienen los versos que terminan igual?</p>
+            <button onclick="checkAnswer(this, true)">A. Rima consonante</button>
+            <button onclick="checkAnswer(this, false)">B. Rima libre</button>
+            <button onclick="checkAnswer(this, false)">C. Rima blanca</button>
+        </div>
+
+        <!-- Pregunta 15 -->
+        <div class="question">
+            <p>15. ¿Cuál de estas palabras es un sustantivo colectivo?</p>
+            <button onclick="checkAnswer(this, true)">A. Rebaño</button>
+            <button onclick="checkAnswer(this, false)">B. Perro</button>
+            <button onclick="checkAnswer(this, false)">C. Grande</button>
+        </div>
+
+        <!-- Pregunta 16 -->
+        <div class="question">
+            <p>16. ¿Qué tiempo verbal expresa "había comido"?</p>
+            <button onclick="checkAnswer(this, true)">A. Pretérito pluscuamperfecto</button>
+            <button onclick="checkAnswer(this, false)">B. Presente</button>
+            <button onclick="checkAnswer(this, false)">C. Futuro simple</button>
+        </div>
+
+        <!-- Pregunta 17 -->
+        <div class="question">
+            <p>17. ¿Cuál es la función de una fábula?</p>
+            <button onclick="checkAnswer(this, true)">A. Enseñar una moraleja</button>
+            <button onclick="checkAnswer(this, false)">B. Entretener solamente</button>
+            <button onclick="checkAnswer(this, false)">C. Informar sobre hechos</button>
+        </div>
+
+        <!-- Pregunta 18 -->
+        <div class="question">
+            <p>18. ¿Cuántas sílabas tiene la palabra "mariposa"?</p>
+            <button onclick="checkAnswer(this, true)">A. 4</button>
+            <button onclick="checkAnswer(this, false)">B. 3</button>
+            <button onclick="checkAnswer(this, false)">C. 5</button>
+        </div>
+
+        <!-- Pregunta 19 -->
+        <div class="question">
+            <p>19. ¿Qué es un hipérbaton?</p>
+            <button onclick="checkAnswer(this, true)">A. Alteración del orden normal de las palabras</button>
+            <button onclick="checkAnswer(this, false)">B. Repetición de sonidos</button>
+            <button onclick="checkAnswer(this, false)">C. Comparación exagerada</button>
+        </div>
+
+        <!-- Pregunta 20 -->
+        <div class="question">
+            <p>20. ¿Cuál es el aumentativo de "casa"?</p>
+            <button onclick="checkAnswer(this, true)">A. Casón</button>
+            <button onclick="checkAnswer(this, false)">B. Casita</button>
+            <button onclick="checkAnswer(this, false)">C. Casilla</button>
+        </div>
+
+        <!-- Resultado final -->
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar cuestionario</button>
+            <button onclick="goToMenu()" class="restart-button" style="background-color: #9b59b6 !important;">📚 Volver al menú</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

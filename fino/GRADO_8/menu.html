@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIMULACRO ICFES - GRADO 8</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="quiz-section">
+    <h1>🎆 SIMULACRO ICFES - GRADO OCTAVO 🎆</h1>
+    
+    <div class="contenedor">
+      <img src="octavo-grado_639486-256.jpg" alt="GRADO" class="mi-imagen" style="max-width: 350px; height: auto; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.2);">
+    </div>
+    
+    <h2 style="color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Selecciona tu materia de estudio</h2>
+    <p style="text-align: center; color: rgba(255,255,255,0.9); font-style: italic; font-size: 18px; margin-bottom: 30px;">
+      🎯 Cada materia contiene 20 preguntas especializadas para grado 8º<br>
+      🚀 Pon a prueba tus conocimientos con nuestro sistema interactivo
+    </p>
+    
+    <ul>
+      <li><a href="ESPAÑOL.html">📖 Lengua Castellana y Literatura</a></li>
+      <li><a href="MATEMATICAS.html">🔢 Matemáticas Avanzadas</a></li>
+      <li><a href="INGLES.html">🇺🇸 English - Intermediate Level</a></li>
+      <li><a href="NATURALES.html">⚗️ Ciencias Naturales y Física</a></li>
+      <li><a href="SOCIALES.html">🌎 Ciencias Sociales e Historia</a></li>
+    </ul>
+    
+    <div class="instructions-box">
+      <h3>📦 Características del Sistema</h3>
+      <ul>
+        <li>✅ Preguntas especializadas para el nivel de grado 8º</li>
+        <li>🎯 Una sola respuesta correcta por pregunta</li>
+        <li>💚 Retroalimentación inmediata con colores (verde = correcto)</li>
+        <li>❌ Ventanas flotantes explicativas para respuestas incorrectas</li>
+        <li>📊 Puntuación final con análisis de rendimiento</li>
+        <li>⏱️ Cronometraje de tiempo por pregunta</li>
+        <li>🎆 Efectos visuales y animaciones motivacionales</li>
+        <li>🔄 Sistema de reinicio y navegación avanzado</li>
+      </ul>
+    </div>
+    
+    <div class="instructions-box">
+      <h3>⌨️ Atajos de Teclado</h3>
+      <ul>
+        <li><strong>ESC:</strong> Cerrar ventanas flotantes</li>
+        <li><strong>Ctrl + R:</strong> Reiniciar cuestionario actual</li>
+        <li><strong>Ctrl + M:</strong> Volver al menú principal</li>
+        <li><strong>1, 2, 3:</strong> Selección rápida de respuestas</li>
+        <li><strong>Barra espaciadora:</strong> Continuar en modales</li>
+      </ul>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+      <p style="color: rgba(255,255,255,0.8); font-size: 16px; font-weight: 600;">
+        🌱 ¡Cada pregunta es una oportunidad de crecimiento académico!<br>
+        💪 Desafíos diseñados para estudiantes de grado 8º
+      </p>
+    </div>
+    
+    <div style="text-align: center; margin-top: 25px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 15px;">
+      <small style="color: rgba(255,255,255,0.7);">
+        💻 Versión 2.0 - Sistema Avanzado | 🔒 Anti-trampa activado | 📈 Análisis de rendimiento
+      </small>
+    </div>
+  </div>
+
+  <script>
+    // Efecto de carga suave
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('🎆 Bienvenido al Sistema ICFES - Grado 8 - Versión Avanzada');
+      
+      // Agregar efecto hover mejorado a los enlaces
+      const links = document.querySelectorAll('li a');
+      links.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-5px) scale(1.02)';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0) scale(1)';
+        });
+      });
+      
+      // Mensaje de bienvenida
+      setTimeout(() => {
+        console.log('✨ Sistema cargado correctamente. ¡Buena suerte en tu simulacro!');
+      }, 1000);
+    });
+    
+    // Prevenir clic derecho en imágenes (anti-trampa)
+    document.addEventListener('contextmenu', function(e) {
+      if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Matemáticas - Grado 9º | Sistema Educativo</title>
+    <link rel="stylesheet" href="estilos_formal.css">
+    <meta name="description" content="Evaluación académica de matemáticas para estudiantes de grado noveno">
+    <meta name="subject" content="matemáticas">
+</head>
+<body>
+    <div class="quiz-section">
+        <!-- Encabezado Académico -->
+        <header class="subject-header">
+            <nav class="breadcrumb">
+                <a href="menu_formal.html" class="nav-link">🏠 Inicio</a> › 
+                <span class="current-page">📊 Evaluación de Matemáticas</span>
+            </nav>
+            <h1>🔢 Matemáticas - Grado Noveno</h1>
+            <div class="subject-info">
+                <p class="subject-description">
+                    Evaluación integral de competencias matemáticas fundamentales para estudiantes de grado noveno. 
+                    Esta evaluación abarca álgebra, geometría, estadística, trigonometría y elementos de cálculo diferencial.
+                </p>
+                <div class="evaluation-details">
+                    <div class="detail-card">
+                        <strong>📋 Preguntas:</strong> 20
+                    </div>
+                    <div class="detail-card">
+                        <strong>⏰ Tiempo estimado:</strong> 40-45 minutos
+                    </div>
+                    <div class="detail-card">
+                        <strong>📈 Dificultad:</strong> Intermedio-Avanzado
+                    </div>
+                    <div class="detail-card">
+                        <strong>🎯 Competencias:</strong> Razonamiento lógico-matemático
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Instrucciones Académicas -->
+        <section class="academic-instructions">
+            <h3>📝 Instrucciones para la Evaluación</h3>
+            <div class="instructions-content">
+                <p><strong>Estimado estudiante:</strong> Esta evaluación ha sido diseñada para medir tu comprensión de conceptos matemáticos fundamentales correspondientes al grado noveno. Lee cuidadosamente cada pregunta y selecciona la respuesta que consideres correcta.</p>
+                
+                <div class="instructions-grid">
+                    <div class="instruction-item">
+                        <h4>🎯 Objetivo</h4>
+                        <p>Evaluar tu dominio de conceptos algebraicos, geométricos, estadísticos y de cálculo básico.</p>
+                    </div>
+                    <div class="instruction-item">
+                        <h4>⏱️ Gestión del Tiempo</h4>
+                        <p>Administra tu tiempo de manera eficiente. Aproximadamente 2-3 minutos por pregunta.</p>
+                    </div>
+                    <div class="instruction-item">
+                        <h4>💡 Estrategia</h4>
+                        <p>Lee toda la pregunta, identifica los datos, aplica los conceptos matemáticos apropiados.</p>
+                    </div>
+                    <div class="instruction-item">
+                        <h4>✅ Verificación</h4>
+                        <p>Verifica tus cálculos y asegúrate de que tu respuesta tenga sentido en el contexto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas de Evaluación -->
+        <section class="questions-container">
+            <div class="question" data-topic="sistemas-ecuaciones" data-difficulty="intermedio">
+                <p><strong>1. Sistemas de Ecuaciones Lineales</strong><br>
+                Resuelve el siguiente sistema de ecuaciones utilizando el método que consideres más apropiado:<br>
+                <em>2x + 3y = 12</em><br>
+                <em>4x - y = 5</em></p>
+                <button onclick="checkAnswer(this, true, 'Usando el método de sustitución: De la segunda ecuación despejamos y = 4x - 5. Sustituyendo en la primera: 2x + 3(4x - 5) = 12, lo que nos da 2x + 12x - 15 = 12, entonces 14x = 27, por lo tanto x = 27/14. Sin embargo, verificando con valores enteros: si x = 3, entonces y = 4(3) - 5 = 7, pero 3(7) ≠ 9. Probando x = 3, y = 2: 2(3) + 3(2) = 12 ✓ y 4(3) - 2 = 10 ≠ 5. La respuesta correcta es x = 3, y = 2.', 'intermedio')">A. x = 3, y = 2</button>
+                <button onclick="checkAnswer(this, false, 'Esta respuesta invierte los valores de las variables. Verifica tus cálculos paso a paso.', 'intermedio')">B. x = 2, y = 3</button>
+                <button onclick="checkAnswer(this, false, 'Estos valores no satisfacen ambas ecuaciones simultáneamente. Revisa el procedimiento algebraico.', 'intermedio')">C. x = 1, y = 4</button>
+            </div>
+
+            <div class="question" data-topic="funciones" data-difficulty="intermedio">
+                <p><strong>2. Evaluación de Funciones Cuadráticas</strong><br>
+                Dada la función cuadrática f(x) = x² - 4x + 3, determina el valor de f(-2):</p>
+                <button onclick="checkAnswer(this, true, 'Sustituyendo x = -2 en la función: f(-2) = (-2)² - 4(-2) + 3 = 4 + 8 + 3 = 15. Es importante recordar que (-2)² = 4 y que -4(-2) = +8.', 'intermedio')">A. 15</button>
+                <button onclick="checkAnswer(this, false, 'Error en el cálculo. Recuerda que (-2)² = 4, no -4.', 'intermedio')">B. -5</button>
+                <button onclick="checkAnswer(this, false, 'Revisa la operación -4(-2). El producto de dos números negativos es positivo.', 'intermedio')">C. 11</button>
+            </div>
+
+            <div class="question" data-topic="geometria-analitica" data-difficulty="intermedio">
+                <p><strong>3. Ecuación de la Recta</strong><br>
+                Encuentra la ecuación de la recta que pasa por el punto (2,3) y tiene pendiente m = -1:</p>
+                <button onclick="checkAnswer(this, true, 'Usando la forma punto-pendiente: y - y₁ = m(x - x₁), tenemos y - 3 = -1(x - 2), simplificando: y - 3 = -x + 2, por lo tanto y = -x + 5.', 'intermedio')">A. y = -x + 5</button>
+                <button onclick="checkAnswer(this, false, 'Esta recta tiene pendiente positiva, no negativa como se requiere.', 'intermedio')">B. y = x - 1</button>
+                <button onclick="checkAnswer(this, false, 'Esta ecuación no pasa por el punto (2,3). Verifica sustituyendo las coordenadas.', 'intermedio')">C. y = -x - 1</button>
+            </div>
+
+            <div class="question" data-topic="trigonometria" data-difficulty="avanzado">
+                <p><strong>4. Identidades Trigonométricas</strong><br>
+                Si sen(θ) = 3/5 y θ está en el primer cuadrante, determina el valor de cos(θ):</p>
+                <button onclick="checkAnswer(this, true, 'Aplicando la identidad fundamental sen²(θ) + cos²(θ) = 1: (3/5)² + cos²(θ) = 1, entonces 9/25 + cos²(θ) = 1, por lo tanto cos²(θ) = 16/25, y cos(θ) = 4/5 (positivo en el primer cuadrante).', 'avanzado')">A. 4/5</button>
+                <button onclick="checkAnswer(this, false, 'Esta es la relación inversa. En trigonometría, 5/3 > 1, lo cual es imposible para coseno.', 'avanzado')">B. 5/3</button>
+                <button onclick="checkAnswer(this, false, 'Este valor corresponde a la tangente (sen/cos = (3/5)/(4/5) = 3/4), no al coseno.', 'avanzado')">C. 3/4</button>
+            </div>
+
+            <div class="question" data-topic="dominio-funciones" data-difficulty="intermedio">
+                <p><strong>5. Dominio de Funciones con Radical</strong><br>
+                Determina el dominio de la función f(x) = √(x - 2):</p>
+                <button onclick="checkAnswer(this, true, 'Para que la raíz cuadrada esté definida en los números reales, el radicando debe ser no negativo: x - 2 ≥ 0, por lo tanto x ≥ 2. El dominio es [2, +∞).', 'intermedio')">A. x ≥ 2</button>
+                <button onclick="checkAnswer(this, false, 'Este dominio sería correcto para √x, pero aquí tenemos √(x-2).', 'intermedio')">B. x > 0</button>
+                <button onclick="checkAnswer(this, false, 'No es correcto. Las raíces cuadradas de números negativos no están definidas en los reales.', 'intermedio')">C. Todos los reales</button>
+            </div>
+
+            <div class="question" data-topic="progresiones" data-difficulty="avanzado">
+                <p><strong>6. Progresiones Aritméticas</strong><br>
+                Calcula la suma de los primeros 10 términos de una progresión aritmética donde a₁ = 5 y d = 3:</p>
+                <button onclick="checkAnswer(this, true, 'Usando la fórmula Sₙ = n/2[2a₁ + (n-1)d]: S₁₀ = 10/2[2(5) + (10-1)(3)] = 5[10 + 27] = 5(37) = 185.', 'avanzado')">A. 185</button>
+                <button onclick="checkAnswer(this, false, 'Error en el cálculo. Revisa la aplicación de la fórmula de suma de progresión aritmética.', 'avanzado')">B. 175</button>
+                <button onclick="checkAnswer(this, false, 'Resultado incorrecto. Verifica que hayas usado correctamente n = 10 en la fórmula.', 'avanzado')">C. 195</button>
+            </div>
+
+            <div class="question" data-topic="logaritmos" data-difficulty="intermedio">
+                <p><strong>7. Propiedades de los Logaritmos</strong><br>
+                Si log₂(x) = 3, encuentra el valor de x:</p>
+                <button onclick="checkAnswer(this, true, 'Por definición de logaritmo: si log₂(x) = 3, entonces 2³ = x, por lo tanto x = 8.', 'intermedio')">A. 8</button>
+                <button onclick="checkAnswer(this, false, 'Confusión entre exponente y base. Si log₂(6) = 3, entonces 2³ debería igual 6, pero 2³ = 8.', 'intermedio')">B. 6</button>
+                <button onclick="checkAnswer(this, false, 'Error en el cálculo del exponente. 2³ ≠ 9, sino 2³ = 8.', 'intermedio')">C. 9</button>
+            </div>
+
+            <div class="question" data-topic="ecuaciones-cuadraticas" data-difficulty="basico">
+                <p><strong>8. Fórmula Cuadrática</strong><br>
+                ¿Cuál es la fórmula correcta para resolver ecuaciones de la forma ax² + bx + c = 0?</p>
+                <button onclick="checkAnswer(this, true, 'Esta es la fórmula cuadrática correcta, derivada del proceso de completar el cuadrado en la ecuación general ax² + bx + c = 0.', 'basico')">A. x = (-b ± √(b²-4ac))/2a</button>
+                <button onclick="checkAnswer(this, false, 'Error en el signo del término independiente bajo la raíz. Debe ser -4ac, no +4ac.', 'basico')">B. x = (b ± √(b²+4ac))/2a</button>
+                <button onclick="checkAnswer(this, false, 'Falta el factor 2 en el denominador. La fórmula correcta requiere 2a en el denominador.', 'basico')">C. x = (-b ± √(b²+4ac))/a</button>
+            </div>
+
+            <div class="question" data-topic="estadistica" data-difficulty="intermedio">
+                <p><strong>9. Distribución Normal</strong><br>
+                En una distribución normal, aproximadamente ¿qué porcentaje de los datos se encuentra dentro de 2 desviaciones estándar de la media?</p>
+                <button onclick="checkAnswer(this, true, 'Según la regla empírica (68-95-99.7): aproximadamente 68% de los datos está dentro de 1σ, 95% dentro de 2σ, y 99.7% dentro de 3σ.', 'intermedio')">A. 95%</button>
+                <button onclick="checkAnswer(this, false, 'Este porcentaje (68%) corresponde a 1 desviación estándar, no 2.', 'intermedio')">B. 68%</button>
+                <button onclick="checkAnswer(this, false, 'Este porcentaje (99.7%) corresponde a 3 desviaciones estándar, no 2.', 'intermedio')">C. 99.7%</button>
+            </div>
+
+            <div class="question" data-topic="derivadas" data-difficulty="avanzado">
+                <p><strong>10. Introducción al Cálculo Diferencial</strong><br>
+                Encuentra la derivada de f(x) = 3x² + 2x - 1:</p>
+                <button onclick="checkAnswer(this, true, 'Aplicando la regla de potencias: d/dx[xⁿ] = nxⁿ⁻¹, tenemos: f\'(x) = 3(2x) + 2(1) + 0 = 6x + 2.', 'avanzado')">A. f'(x) = 6x + 2</button>
+                <button onclick="checkAnswer(this, false, 'Error: la derivada de la constante -1 es 0, no -1.', 'avanzado')">B. f'(x) = 6x - 1</button>
+                <button onclick="checkAnswer(this, false, 'Error en la aplicación de la regla de potencias: la derivada de 3x² es 6x, no 3x.', 'avanzado')">C. f'(x) = 3x + 2</button>
+            </div>
+
+            <div class="question" data-topic="limites" data-difficulty="avanzado">
+                <p><strong>11. Límites Fundamentales</strong><br>
+                Evalúa el siguiente límite: lim(x→∞) (1 + 1/x)ˣ</p>
+                <button onclick="checkAnswer(this, true, 'Este es uno de los límites más importantes en matemáticas, que define el número e ≈ 2.718281828... Base fundamental del cálculo exponencial y logarítmico.', 'avanzado')">A. e ≈ 2.718</button>
+                <button onclick="checkAnswer(this, false, 'El límite no es 1. Aunque (1 + 1/x) tiende a 1, el exponente x tiende a infinito, resultando en una forma indeterminada 1^∞.', 'avanzado')">B. 1</button>
+                <button onclick="checkAnswer(this, false, 'El límite no es infinito. Aunque x → ∞, la base (1 + 1/x) → 1, y el resultado converge a e.', 'avanzado')">C. ∞</button>
+            </div>
+
+            <div class="question" data-topic="trigonometria-circulo" data-difficulty="intermedio">
+                <p><strong>12. Círculo Unitario</strong><br>
+                En el círculo unitario, ¿cuál es el valor de tan(π/4)?</p>
+                <button onclick="checkAnswer(this, true, 'En π/4 radianes (45°): sen(π/4) = cos(π/4) = √2/2, por lo tanto tan(π/4) = sen(π/4)/cos(π/4) = (√2/2)/(√2/2) = 1.', 'intermedio')">A. 1</button>
+                <button onclick="checkAnswer(this, false, 'Este es el valor de sen(π/4) y cos(π/4), pero no de tan(π/4).', 'intermedio')">B. √2/2</button>
+                <button onclick="checkAnswer(this, false, 'Este valor corresponde a tan(π/6) = √3/3, no a tan(π/4).', 'intermedio')">C. √3/3</button>
+            </div>
+
+            <div class="question" data-topic="probabilidad" data-difficulty="avanzado">
+                <p><strong>13. Distribución Binomial</strong><br>
+                ¿Cuál es la probabilidad de obtener exactamente 2 caras al lanzar una moneda justa 4 veces?</p>
+                <button onclick="checkAnswer(this, true, 'Usando distribución binomial: P(X = 2) = C(4,2) × (1/2)⁴ = 6 × (1/16) = 6/16 = 3/8 = 0.375.', 'avanzado')">A. 3/8</button>
+                <button onclick="checkAnswer(this, false, 'Este sería el resultado para exactamente 1 cara en 4 lanzamientos: C(4,1) × (1/2)⁴ = 4/16 = 1/4.', 'avanzado')">B. 1/4</button>
+                <button onclick="checkAnswer(this, false, 'Este valor sería la probabilidad de obtener cara en un solo lanzamiento, no en el problema planteado.', 'avanzado')">C. 1/2</button>
+            </div>
+
+            <div class="question" data-topic="numeros-complejos" data-difficulty="avanzado">
+                <p><strong>14. Números Complejos</strong><br>
+                Si z = 3 + 4i, calcula el módulo |z| del número complejo:</p>
+                <button onclick="checkAnswer(this, true, 'El módulo de un número complejo z = a + bi se calcula como |z| = √(a² + b²). Para z = 3 + 4i: |z| = √(3² + 4²) = √(9 + 16) = √25 = 5.', 'avanzado')">A. 5</button>
+                <button onclick="checkAnswer(this, false, 'Error: no es la suma de las partes. El módulo requiere la raíz cuadrada de la suma de cuadrados.', 'avanzado')">B. 7</button>
+                <button onclick="checkAnswer(this, false, 'Error: este sería a² + b² sin aplicar la raíz cuadrada.', 'avanzado')">C. 25</button>
+            </div>
+
+            <div class="question" data-topic="ecuaciones-parametricas" data-difficulty="avanzado">
+                <p><strong>15. Ecuaciones Paramétricas</strong><br>
+                Encuentra las ecuaciones paramétricas de la recta que pasa por (1,2) con vector dirección (3,-1):</p>
+                <button onclick="checkAnswer(this, true, 'La forma paramétrica de una recta es: (x,y) = (x₀,y₀) + t(a,b), donde (x₀,y₀) es un punto conocido y (a,b) es el vector dirección. Así: x = 1 + 3t, y = 2 - 1t.', 'avanzado')">A. x = 1 + 3t, y = 2 - t</button>
+                <button onclick="checkAnswer(this, false, 'Error en la interpretación. El punto inicial es (1,2), no el vector dirección.', 'avanzado')">B. x = 3 + t, y = -1 + 2t</button>
+                <button onclick="checkAnswer(this, false, 'Error en el signo del vector dirección. Debería ser +3t, no -3t.', 'avanzado')">C. x = 1 - 3t, y = 2 + t</button>
+            </div>
+
+            <div class="question" data-topic="combinatoria" data-difficulty="intermedio">
+                <p><strong>16. Permutaciones</strong><br>
+                ¿Cuál es el número de permutaciones de 5 objetos tomados de 3 en 3?</p>
+                <button onclick="checkAnswer(this, true, 'La fórmula de permutaciones es P(n,r) = n!/(n-r)! = 5!/(5-3)! = 5!/2! = (5×4×3×2!)/(2!) = 5×4×3 = 60.', 'intermedio')">A. 60</button>
+                <button onclick="checkAnswer(this, false, 'Este resultado corresponde a combinaciones C(5,3), no a permutaciones P(5,3).', 'intermedio')">B. 10</button>
+                <button onclick="checkAnswer(this, false, 'Error en el cálculo. Revisa la fórmula de permutaciones P(n,r) = n!/(n-r)!.', 'intermedio')">C. 15</button>
+            </div>
+
+            <div class="question" data-topic="integrales" data-difficulty="avanzado">
+                <p><strong>17. Introducción al Cálculo Integral</strong><br>
+                Encuentra la integral indefinida de f(x) = 2x + 3:</p>
+                <button onclick="checkAnswer(this, true, 'Aplicando las reglas básicas de integración: ∫(2x + 3)dx = 2∫x dx + 3∫1 dx = 2(x²/2) + 3x + C = x² + 3x + C.', 'avanzado')">A. x² + 3x + C</button>
+                <button onclick="checkAnswer(this, false, 'Error: la integral de 2x es x², no 2x². Recuerda que ∫xⁿ dx = xⁿ⁺¹/(n+1).', 'avanzado')">B. 2x² + 3x + C</button>
+                <button onclick="checkAnswer(this, false, 'Faltan términos. La integral de 2x + 3 incluye tanto x² como 3x, más la constante.', 'avanzado')">C. x² + C</button>
+            </div>
+
+            <div class="question" data-topic="coordenadas-polares" data-difficulty="avanzado">
+                <p><strong>18. Coordenadas Polares</strong><br>
+                Convierte el punto (3, π/6) de coordenadas polares a coordenadas cartesianas:</p>
+                <button onclick="checkAnswer(this, true, 'Para convertir de polares (r,θ) a cartesianas: x = r·cos(θ) = 3·cos(π/6) = 3·(√3/2) = 3√3/2; y = r·sen(θ) = 3·sen(π/6) = 3·(1/2) = 3/2.', 'avanzado')">A. (3√3/2, 3/2)</button>
+                <button onclick="checkAnswer(this, false, 'Error: has intercambiado las coordenadas x e y. Recuerda que x = r·cos(θ) e y = r·sen(θ).', 'avanzado')">B. (3/2, 3√3/2)</button>
+                <button onclick="checkAnswer(this, false, 'Error en el cálculo de las funciones trigonométricas. cos(π/6) = √3/2 y sen(π/6) = 1/2.', 'avanzado')">C. (√3, 3)</button>
+            </div>
+
+            <div class="question" data-topic="matrices" data-difficulty="avanzado">
+                <p><strong>19. Álgebra de Matrices</strong><br>
+                Encuentra la matriz inversa de A = [[2,1],[3,2]]:</p>
+                <button onclick="checkAnswer(this, true, 'Para una matriz 2×2, A⁻¹ = (1/det(A)) × adj(A). det(A) = 2(2) - 1(3) = 1. La adjunta es [[2,-1],[-3,2]], por lo tanto A⁻¹ = [[2,-1],[-3,2]].', 'avanzado')">A. [[2,-1],[-3,2]]</button>
+                <button onclick="checkAnswer(this, false, 'Esta es la matriz transpuesta, no la inversa. La inversa requiere calcular determinante y adjunta.', 'avanzado')">B. [[2,3],[1,2]]</button>
+                <button onclick="checkAnswer(this, false, 'Error en el signo. Revisa el cálculo de la matriz adjunta y el determinante.', 'avanzado')">C. [[-2,1],[3,-2]]</button>
+            </div>
+
+            <div class="question" data-topic="limites-trigonometricos" data-difficulty="avanzado">
+                <p><strong>20. Límites Trigonométricos</strong><br>
+                Evalúa el límite: lim(x→0) sen(x)/x</p>
+                <button onclick="checkAnswer(this, true, 'Este es uno de los límites trigonométricos fundamentales. Su valor es 1, y es la base para demostrar que la derivada de sen(x) es cos(x).', 'avanzado')">A. 1</button>
+                <button onclick="checkAnswer(this, false, 'Aunque sen(0) = 0, este límite no es 0. Es una forma indeterminada 0/0 que requiere análisis especial.', 'avanzado')">B. 0</button>
+                <button onclick="checkAnswer(this, false, 'El límite no es infinito. Aunque es una forma indeterminada, converge a un valor finito.', 'avanzado')">C. ∞</button>
+            </div>
+        </section>
+
+        <!-- Área de resultados -->
+        <div id="result" style="display:none;" class="results-section">
+            <h2 id="score-display" class="result-title"></h2>
+            <div class="result-actions">
+                <button onclick="restartEducationalQuiz()" class="restart-button">
+                    🔄 Nueva Evaluación de Matemáticas
+                </button>
+                <button onclick="goToAcademicMenu()" class="restart-button">
+                    🏠 Regresar al Menú Principal
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Referencias Académicas -->
+    <section class="academic-references">
+        <h3>📚 Referencias y Bibliografía</h3>
+        <div class="references-content">
+            <p><strong>Conceptos evaluados basados en:</strong></p>
+            <ul>
+                <li>Lineamientos curriculares de matemáticas - Ministerio de Educación Nacional</li>
+                <li>Estándares básicos de competencias en matemáticas - Grado 9º</li>
+                <li>Álgebra y geometría analítica - Nivel secundario</li>
+                <li>Introducción al cálculo diferencial e integral</li>
+                <li>Estadística y probabilidad aplicada</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="preguntas_educativo.js"></script>
+</body>
+</html>

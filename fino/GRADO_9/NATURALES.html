@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Ciencias Naturales Pre-Universitarias - Grado 9</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>🔬 Ciencias Naturales Pre-Universitarias - Grado 9</h1>
+        <p style="text-align: center; color: rgba(255,255,255,0.9);">
+            <a href="menu.html" style="color: #4facfe; text-decoration: none; font-weight: 600;">⬅ Menú Principal</a>
+        </p>
+
+        <div class="question">
+            <p>1. El principio de conservación de la energía establece que:</p>
+            <button onclick="checkAnswer(this, true, 'Primera ley de la termodinámica: la energía no se crea ni se destruye', 'advanced')">A. La energía no se crea ni se destruye, solo se transforma</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. La energía siempre aumenta en el universo</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. La energía se puede crear espontáneamente</button>
+        </div>
+
+        <div class="question">
+            <p>2. En genética, los cromosomas homólogos son:</p>
+            <button onclick="checkAnswer(this, true, 'Cromosomas que tienen genes para los mismos rasgos en la misma posición', 'advanced')">A. Cromosomas que portan genes para los mismos caracteres</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Cromosomas idénticos en secuencia de ADN</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Cromosomas del mismo sexo</button>
+        </div>
+
+        <div class="question">
+            <p>3. La segunda ley de Newton se expresa como:</p>
+            <button onclick="checkAnswer(this, true, 'F = ma: La fuerza es igual a masa por aceleración', 'advanced')">A. F = ma</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. E = mc²</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. P = mv</button>
+        </div>
+
+        <div class="question">
+            <p>4. En química, el número de Avogadro representa:</p>
+            <button onclick="checkAnswer(this, true, 'Número de partículas en un mol: 6.022 x 10²³', 'advanced')">A. 6.022 x 10²³ partículas por mol</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. La masa atómica promedio</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. El número de electrones en un átomo</button>
+        </div>
+
+        <div class="question">
+            <p>5. La fotosintesis convierte:</p>
+            <button onclick="checkAnswer(this, true, 'Proceso que convierte CO₂ y H₂O en glucosa usando energía solar', 'advanced')">A. CO₂ + H₂O en glucosa usando luz solar</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Glucosa en CO₂ + H₂O</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Oxígeno en dióxido de carbono</button>
+        </div>
+
+        <div class="question">
+            <p>6. En física, la velocidad de la luz en el vacío es aproximadamente:</p>
+            <button onclick="checkAnswer(this, true, 'Constante física fundamental: c = 3 x 10⁸ m/s', 'advanced')">A. 3 x 10⁸ m/s</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 3 x 10⁶ m/s</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 3 x 10¹⁰ m/s</button>
+        </div>
+
+        <div class="question">
+            <p>7. El proceso de meiosis resulta en células que son:</p>
+            <button onclick="checkAnswer(this, true, 'La meiosis reduce el número cromomósico a la mitad (haploides)', 'advanced')">A. Haploides (n)</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Diploides (2n)</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Triploides (3n)</button>
+        </div>
+
+        <div class="question">
+            <p>8. En química orgánica, los hidrocarburos saturados son:</p>
+            <button onclick="checkAnswer(this, true, 'Alcanos: solo enlaces simples carbono-carbono (C-C)', 'advanced')">A. Alcanos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Alquenos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Alquinos</button>
+        </div>
+
+        <div class="question">
+            <p>9. La teoría de la relatividad especial postula que:</p>
+            <button onclick="checkAnswer(this, true, 'Tiempo y espacio son relativos; velocidad de luz es constante', 'advanced')">A. El tiempo y el espacio son relativos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. La gravedad es una fuerza</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. El tiempo es absoluto</button>
+        </div>
+
+        <div class="question">
+            <p>10. En ecología, los productores primarios son organismos que:</p>
+            <button onclick="checkAnswer(this, true, 'Autótrofos que convierten energía inorgánica en orgánica', 'advanced')">A. Convierten energía inorgánica en orgánica</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Se alimentan de otros organismos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Descomponen materia orgánica</button>
+        </div>
+
+        <div class="question">
+            <p>11. La configuración electrónica del oxígeno (Z=8) es:</p>
+            <button onclick="checkAnswer(this, true, '8 electrones distribuidos: 1s² 2s² 2p⁴', 'advanced')">A. 1s² 2s² 2p⁴</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 1s² 2s⁶</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 1s² 2p⁶</button>
+        </div>
+
+        <div class="question">
+            <p>12. El principio de Hardy-Weinberg en genética de poblaciones requiere:</p>
+            <button onclick="checkAnswer(this, true, 'Condiciones ideales: no mutación, migración, selección, apareamiento aleatorio', 'advanced')">A. Ausencia de factores evolutivos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Selección natural activa</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Migración constante</button>
+        </div>
+
+        <div class="question">
+            <p>13. En termodinámica, la entropía tiende a:</p>
+            <button onclick="checkAnswer(this, true, 'Segunda ley: la entropía del universo siempre aumenta', 'advanced')">A. Aumentar en sistemas aislados</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Permanecer constante</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Disminuir espontáneamente</button>
+        </div>
+
+        <div class="question">
+            <p>14. La estructura del ADN fue descrita por el modelo de:</p>
+            <button onclick="checkAnswer(this, true, 'Watson y Crick propusieron la doble hélice en 1953', 'advanced')">A. Watson y Crick</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Mendel</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Darwin</button>
+        </div>
+
+        <div class="question">
+            <p>15. En óptica, la refracción ocurre cuando la luz:</p>
+            <button onclick="checkAnswer(this, true, 'Cambia de velocidad al pasar entre medios de diferente densidad', 'advanced')">A. Cambia de medio y se desvía</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Rebota en una superficie</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Se absorbe completamente</button>
+        </div>
+
+        <div class="question">
+            <p>16. Los ácidos nucleicos (ADN y ARN) están formados por:</p>
+            <button onclick="checkAnswer(this, true, 'Nucleótidos: base nitrogenada, azúcar, fosfato', 'advanced')">A. Nucleótidos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Aminoácidos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Monosacáridos</button>
+        </div>
+
+        <div class="question">
+            <p>17. La ley de conservación de la masa en química establece:</p>
+            <button onclick="checkAnswer(this, true, 'Lavoisier: la masa se conserva en reacciones químicas', 'advanced')">A. La masa se conserva en las reacciones</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. La masa siempre aumenta</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. La masa puede desaparecer</button>
+        </div>
+
+        <div class="question">
+            <p>18. En biología celular, las mitocondrias son responsables de:</p>
+            <button onclick="checkAnswer(this, true, 'Respiración celular y producción de ATP (energía)', 'advanced')">A. La producción de ATP</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. La síntesis de proteínas</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. La división celular</button>
+        </div>
+
+        <div class="question">
+            <p>19. El principio de incertidumbre de Heisenberg establece:</p>
+            <button onclick="checkAnswer(this, true, 'No se puede conocer simultáneamente posición y momento de una partícula', 'advanced')">A. Imposibilidad de medir simultáneamente posición y momento</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Los electrones tienen órbitas definidas</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. La luz es solo onda</button>
+        </div>
+
+        <div class="question">
+            <p>20. La selección natural de Darwin se basa en:</p>
+            <button onclick="checkAnswer(this, true, 'Supervivencia diferencial y reproducción de los más aptos', 'advanced')">A. La supervivencia del más apto</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. La herencia de caracteres adquiridos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. La generación espontánea</button>
+        </div>
+
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar Ciencias</button>
+            <button onclick="goToMenu()" class="restart-button">🏠 Menú Élite</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

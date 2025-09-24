@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lengua Castellana - Grado 8</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>📖 Lengua Castellana y Literatura - Grado 8</h1>
+        <p style="text-align: center; color: rgba(255,255,255,0.9);">
+            <a href="menu.html" style="color: #74b9ff; text-decoration: none; font-weight: 600;">⬅ Volver al menú principal</a>
+        </p>
+
+        <!-- Pregunta 1 -->
+        <div class="question">
+            <p>1. En la oración "María estudió intensamente para el examen", la función sintáctica de "intensamente" es:</p>
+            <button onclick="checkAnswer(this, true, 'Es un adverbio de modo que modifica al verbo estudiar')">A. Complemento circunstancial de modo</button>
+            <button onclick="checkAnswer(this, false)">B. Complemento directo</button>
+            <button onclick="checkAnswer(this, false)">C. Atributo</button>
+        </div>
+
+        <div class="question">
+            <p>2. El recurso literario presente en "Sus ojos eran dos luceros" es:</p>
+            <button onclick="checkAnswer(this, true, 'Compara directamente ojos con luceros sin usar como')">A. Metáfora</button>
+            <button onclick="checkAnswer(this, false)">B. Símil</button>
+            <button onclick="checkAnswer(this, false)">C. Hipérbole</button>
+        </div>
+
+        <div class="question">
+            <p>3. El género literario que presenta conflictos mediante diálogos es:</p>
+            <button onclick="checkAnswer(this, true, 'El teatro usa diálogos para desarrollar la acción')">A. Drama</button>
+            <button onclick="checkAnswer(this, false)">B. Épico</button>
+            <button onclick="checkAnswer(this, false)">C. Lírico</button>
+        </div>
+
+        <div class="question">
+            <p>4. La palabra "librería" se forma por el proceso de:</p>
+            <button onclick="checkAnswer(this, true, 'Libro + sufijo -ería = lugar donde se venden libros')">A. Derivación</button>
+            <button onclick="checkAnswer(this, false)">B. Composición</button>
+            <button onclick="checkAnswer(this, false)">C. Parasintesis</button>
+        </div>
+
+        <div class="question">
+            <p>5. El tiempo verbal en "Habré terminado el proyecto mañana" es:</p>
+            <button onclick="checkAnswer(this, true, 'Expresa acción futura anterior a otra futura')">A. Futuro perfecto</button>
+            <button onclick="checkAnswer(this, false)">B. Condicional compuesto</button>
+            <button onclick="checkAnswer(this, false)">C. Presente perfecto</button>
+        </div>
+
+        <div class="question">
+            <p>6. En el verso "En el silencio sólo se escuchaba un susurro", el recurso fónico es:</p>
+            <button onclick="checkAnswer(this, true, 'Repetición del sonido /s/ crea efecto de susurro')">A. Aliteración</button>
+            <button onclick="checkAnswer(this, false)">B. Rima consonante</button>
+            <button onclick="checkAnswer(this, false)">C. Onomatopeya</button>
+        </div>
+
+        <div class="question">
+            <p>7. La función del lenguaje predominante en "Cierra la puerta, por favor" es:</p>
+            <button onclick="checkAnswer(this, true, 'Busca influir en el comportamiento del receptor')">A. Conativa o apelativa</button>
+            <button onclick="checkAnswer(this, false)">B. Referencial</button>
+            <button onclick="checkAnswer(this, false)">C. Expresiva</button>
+        </div>
+
+        <div class="question">
+            <p>8. El tipo de narrador que conoce todo sobre los personajes es:</p>
+            <button onclick="checkAnswer(this, true, 'Tiene conocimiento total de la historia y personajes')">A. Omnisciente</button>
+            <button onclick="checkAnswer(this, false)">B. Testigo</button>
+            <button onclick="checkAnswer(this, false)">C. Protagonista</button>
+        </div>
+
+        <div class="question">
+            <p>9. La palabra "anticonstitucional" contiene:</p>
+            <button onclick="checkAnswer(this, true, 'Anti- (prefijo) + constitución + -al (sufijo)')">A. Prefijo y sufijo</button>
+            <button onclick="checkAnswer(this, false)">B. Solo prefijo</button>
+            <button onclick="checkAnswer(this, false)">C. Solo sufijo</button>
+        </div>
+
+        <div class="question">
+            <p>10. El complemento directo en "Los niños compraron dulces" es:</p>
+            <button onclick="checkAnswer(this, true, 'Responde a qué compraron: dulces')">A. dulces</button>
+            <button onclick="checkAnswer(this, false)">B. los niños</button>
+            <button onclick="checkAnswer(this, false)">C. compraron</button>
+        </div>
+
+        <div class="question">
+            <p>11. La estrofa de cuatro versos se llama:</p>
+            <button onclick="checkAnswer(this, true, 'Cuarteto, cuarteta o redondilla según la métrica')">A. Cuarteto</button>
+            <button onclick="checkAnswer(this, false)">B. Terceto</button>
+            <button onclick="checkAnswer(this, false)">C. Octava</button>
+        </div>
+
+        <div class="question">
+            <p>12. El sinónimo de "perspicaz" es:</p>
+            <button onclick="checkAnswer(this, true, 'Ambas significan agudo, penetrante, inteligente')">A. Sagaz</button>
+            <button onclick="checkAnswer(this, false)">B. Ingenuo</button>
+            <button onclick="checkAnswer(this, false)">C. Dudoso</button>
+        </div>
+
+        <div class="question">
+            <p>13. La literatura del Realismo se caracteriza por:</p>
+            <button onclick="checkAnswer(this, true, 'Retrata fielmente la realidad social y cotidiana')">A. Descripción objetiva de la realidad</button>
+            <button onclick="checkAnswer(this, false)">B. Idealización del amor</button>
+            <button onclick="checkAnswer(this, false)">C. Temas sobrenaturales</button>
+        </div>
+
+        <div class="question">
+            <p>14. La palabra "correveidile" es:</p>
+            <button onclick="checkAnswer(this, true, 'Une corre + ve + y + dile en una sola palabra')">A. Palabra compuesta</button>
+            <button onclick="checkAnswer(this, false)">B. Palabra derivada</button>
+            <button onclick="checkAnswer(this, false)">C. Palabra simple</button>
+        </div>
+
+        <div class="question">
+            <p>15. El modo verbal que expresa duda o posibilidad es:</p>
+            <button onclick="checkAnswer(this, true, 'Tal vez llueva, quizás venga: expresa incertidumbre')">A. Subjuntivo</button>
+            <button onclick="checkAnswer(this, false)">B. Indicativo</button>
+            <button onclick="checkAnswer(this, false)">C. Imperativo</button>
+        </div>
+
+        <div class="question">
+            <p>16. En "Llegó cansado del trabajo", "cansado" funciona como:</p>
+            <button onclick="checkAnswer(this, true, 'Indica el estado en que se realiza la acción')">A. Complemento predicativo</button>
+            <button onclick="checkAnswer(this, false)">B. Complemento directo</button>
+            <button onclick="checkAnswer(this, false)">C. Complemento circunstancial</button>
+        </div>
+
+        <div class="question">
+            <p>17. La obra "Cien años de soledad" pertenece al movimiento:</p>
+            <button onclick="checkAnswer(this, true, 'Realismo mágico latinoamericano del siglo XX')">A. Realismo mágico</button>
+            <button onclick="checkAnswer(this, false)">B. Modernismo</button>
+            <button onclick="checkAnswer(this, false)">C. Romanticismo</button>
+        </div>
+
+        <div class="question">
+            <p>18. El acento en "cálido" es:</p>
+            <button onclick="checkAnswer(this, true, 'La sílaba tónica es la antepenúltima: cá-li-do')">A. Esdrújulo</button>
+            <button onclick="checkAnswer(this, false)">B. Grave</button>
+            <button onclick="checkAnswer(this, false)">C. Agudo</button>
+        </div>
+
+        <div class="question">
+            <p>19. La coherencia textual se refiere a:</p>
+            <button onclick="checkAnswer(this, true, 'Unidad semántica que da sentido global al texto')">A. Unidad de significado en el texto</button>
+            <button onclick="checkAnswer(this, false)">B. Corrección gramatical</button>
+            <button onclick="checkAnswer(this, false)">C. Belleza del lenguaje</button>
+        </div>
+
+        <div class="question">
+            <p>20. El recurso en "Me muero de risa" es:</p>
+            <button onclick="checkAnswer(this, true, 'Exagera la intensidad de la risa')">A. Hipérbole</button>
+            <button onclick="checkAnswer(this, false)">B. Ironía</button>
+            <button onclick="checkAnswer(this, false)">C. Comparación</button>
+        </div>
+
+        <!-- Resultado final -->
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar Español</button>
+            <button onclick="goToMenu()" class="restart-button" style="background: linear-gradient(145deg, #6c5ce7 0%, #a29bfe 100%) !important;">📚 Menú Principal</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

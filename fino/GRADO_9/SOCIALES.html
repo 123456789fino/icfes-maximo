@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Ciencias Sociales Pensamiento Crítico - Grado 9</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>🌍 Ciencias Sociales Pensamiento Crítico - Grado 9</h1>
+        <p style="text-align: center; color: rgba(255,255,255,0.9);">
+            <a href="menu.html" style="color: #4facfe; text-decoration: none; font-weight: 600;">⬅ Menú Principal</a>
+        </p>
+
+        <div class="question">
+            <p>1. La Revolución Francesa (1789) se caracterizó por promover los principios de:</p>
+            <button onclick="checkAnswer(this, true, 'Lema de la Revolución Francesa que inspiró movimientos democráticos', 'advanced')">A. Libertad, Igualdad, Fraternidad</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Fe, Esperanza, Caridad</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Orden, Progreso, Tradición</button>
+        </div>
+
+        <div class="question">
+            <p>2. El proceso de globalización económica se caracteriza principalmente por:</p>
+            <button onclick="checkAnswer(this, true, 'Integración de mercados, tecnología y comunicaciones a nivel mundial', 'advanced')">A. La integración de mercados mundiales</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. El aislacionismo económico</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. La autarquía nacional</button>
+        </div>
+
+        <div class="question">
+            <p>3. En geografía humana, la densidad poblacional se calcula como:</p>
+            <button onclick="checkAnswer(this, true, 'Fórmula demográfica básica: habitantes por kilómetro cuadrado', 'advanced')">A. Número de habitantes / Área en km²</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Área / Número de habitantes</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Población x Área</button>
+        </div>
+
+        <div class="question">
+            <p>4. La Declaración Universal de Derechos Humanos fue adoptada por la ONU en:</p>
+            <button onclick="checkAnswer(this, true, 'Documento fundamental adoptado el 10 de diciembre de 1948', 'advanced')">A. 1948</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 1945</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 1950</button>
+        </div>
+
+        <div class="question">
+            <p>5. El sistema político democrático se basa en el principio de:</p>
+            <button onclick="checkAnswer(this, true, 'Principio fundamental de la democracia moderna', 'advanced')">A. Soberanía popular</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Autocracia</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Teocracia</button>
+        </div>
+
+        <div class="question">
+            <p>6. La Guerra Fría (1947-1991) fue un conflicto ideológico entre:</p>
+            <button onclick="checkAnswer(this, true, 'Confrontación entre capitalismo (EEUU) y socialismo (URSS)', 'advanced')">A. Estados Unidos y la Unión Soviética</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Alemania y Francia</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. China y Japón</button>
+        </div>
+
+        <div class="question">
+            <p>7. En economía, la inflación se define como:</p>
+            <button onclick="checkAnswer(this, true, 'Fenómeno de aumento generalizado y sostenido de precios', 'advanced')">A. El aumento generalizado de precios</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. La disminución del desempleo</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. El crecimiento del PIB</button>
+        </div>
+
+        <div class="question">
+            <p>8. La Constitución de 1991 en Colombia estableció:</p>
+            <button onclick="checkAnswer(this, true, 'Colombia como Estado Social de Derecho pluriétnico y multicultural', 'advanced')">A. Un Estado Social de Derecho</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Una monarquía constitucional</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Un sistema federal</button>
+        </div>
+
+        <div class="question">
+            <p>9. El desarrollo sostenible busca equilibrar:</p>
+            <button onclick="checkAnswer(this, true, 'Modelo de desarrollo que considera las tres dimensiones fundamentales', 'advanced')">A. Crecimiento económico, equidad social y protección ambiental</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Solo el crecimiento económico</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Únicamente la conservación ambiental</button>
+        </div>
+
+        <div class="question">
+            <p>10. En el contexto de migraciones, un refugiado es una persona que:</p>
+            <button onclick="checkAnswer(this, true, 'Definición según Convención de Ginebra de 1951', 'advanced')">A. Huye de persecución por motivos de raza, religión, nacionalidad, opinión política</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Busca mejores oportunidades económicas</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Viaja por turismo</button>
+        </div>
+
+        <div class="question">
+            <p>11. La teoría de la división de poderes fue propuesta por:</p>
+            <button onclick="checkAnswer(this, true, 'Montesquieu formuló la separación de poderes en El espíritu de las leyes', 'advanced')">A. Montesquieu</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Rousseau</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Voltaire</button>
+        </div>
+
+        <div class="question">
+            <p>12. El proceso de independencia de América Latina se vio influenciado por:</p>
+            <button onclick="checkAnswer(this, true, 'Ideas ilustradas y ejemplos de revoluciones democráticas', 'advanced')">A. Las ideas de la Ilustración y la Revolución Francesa</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. El feudalismo medieval</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Las cruzadas</button>
+        </div>
+
+        <div class="question">
+            <p>13. En geografía física, las placas tectónicas son responsables de:</p>
+            <button onclick="checkAnswer(this, true, 'Movimiento de placas causa terremotos, volcanes y formación montañas', 'advanced')">A. Terremotos, volcanes y formación de montañas</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Los cambios climáticos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Las mareas oceánicas</button>
+        </div>
+
+        <div class="question">
+            <p>14. La Organización de las Naciones Unidas (ONU) fue creada en:</p>
+            <button onclick="checkAnswer(this, true, 'Fundada en 1945 después de la Segunda Guerra Mundial', 'advanced')">A. 1945</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. 1918</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. 1960</button>
+        </div>
+
+        <div class="question">
+            <p>15. El concepto de "Estado de Derecho" implica que:</p>
+            <button onclick="checkAnswer(this, true, 'Principio fundamental: nadie está por encima de la ley', 'advanced')">A. Todos están sujetos a la ley, incluidos los gobernantes</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Solo los ciudadanos deben cumplir la ley</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. La ley no se aplica a los políticos</button>
+        </div>
+
+        <div class="question">
+            <p>16. La Revolución Industrial inició en el siglo XVIII en:</p>
+            <button onclick="checkAnswer(this, true, 'Gran Bretaña fue el primer país en industrializarse', 'advanced')">A. Gran Bretaña</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Francia</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Alemania</button>
+        </div>
+
+        <div class="question">
+            <p>17. En el sistema económico capitalista, los medios de producción son:</p>
+            <button onclick="checkAnswer(this, true, 'Característica fundamental del capitalismo: propiedad privada', 'advanced')">A. De propiedad privada</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Del Estado</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. De propiedad comunal</button>
+        </div>
+
+        <div class="question">
+            <p>18. La urbanización es el proceso por el cual:</p>
+            <button onclick="checkAnswer(this, true, 'Proceso demográfico de concentración poblacional en ciudades', 'advanced')">A. La población se concentra en las ciudades</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Las ciudades se vuelven rurales</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Disminuye la población total</button>
+        </div>
+
+        <div class="question">
+            <p>19. Los derechos civiles y políticos incluyen:</p>
+            <button onclick="checkAnswer(this, true, 'Derechos fundamentales de primera generación', 'advanced')">A. Libertad de expresión, derecho al voto, due process</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Solo derechos económicos</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Únicamente obligaciones ciudadanas</button>
+        </div>
+
+        <div class="question">
+            <p>20. El cambio climático actual se debe principalmente a:</p>
+            <button onclick="checkAnswer(this, true, 'Consenso científico: actividades humanas aumentan gases de efecto invernadero', 'advanced')">A. Actividades humanas que aumentan gases de efecto invernadero</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">B. Cambios naturales del sol</button>
+            <button onclick="checkAnswer(this, false, '', 'advanced')">C. Variaciones orbitales terrestres</button>
+        </div>
+
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar Sociales</button>
+            <button onclick="goToMenu()" class="restart-button">🏠 Menú Élite</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

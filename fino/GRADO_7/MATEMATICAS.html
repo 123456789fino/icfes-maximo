@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas Avanzadas - Grado 8</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="quiz-section">
+        <h1>🔢 Matemáticas Avanzadas - Grado 8</h1>
+        <p style="text-align: center; color: rgba(255,255,255,0.9);">
+            <a href="menu.html" style="color: #74b9ff; text-decoration: none; font-weight: 600;">⬅ Volver al menú principal</a>
+        </p>
+
+        <!-- Pregunta 1: Álgebra -->
+        <div class="question">
+            <p>1. Resuelve la ecuación: 3x + 5 = 2x - 7</p>
+            <button onclick="checkAnswer(this, true, 'Se despeja x: 3x - 2x = -7 - 5, por lo tanto x = -12')">A. x = -12</button>
+            <button onclick="checkAnswer(this, false)">B. x = 12</button>
+            <button onclick="checkAnswer(this, false)">C. x = -2</button>
+        </div>
+
+        <!-- Pregunta 2: Potencias -->
+        <div class="question">
+            <p>2. ¿Cuál es el resultado de (2³)²?</p>
+            <button onclick="checkAnswer(this, true, 'Aplicando la regla (a^m)^n = a^(m×n): (2³)² = 2^6 = 64')">A. 64</button>
+            <button onclick="checkAnswer(this, false)">B. 12</button>
+            <button onclick="checkAnswer(this, false)">C. 32</button>
+        </div>
+
+        <!-- Pregunta 3: Geometría -->
+        <div class="question">
+            <p>3. El área de un círculo con radio 5 cm es aproximadamente:</p>
+            <button onclick="checkAnswer(this, true, 'A = πr² = π(5)² = 25π ≈ 78.54 cm²')">A. 78.54 cm²</button>
+            <button onclick="checkAnswer(this, false)">B. 31.41 cm²</button>
+            <button onclick="checkAnswer(this, false)">C. 157.08 cm²</button>
+        </div>
+
+        <!-- Pregunta 4: Números enteros -->
+        <div class="question">
+            <p>4. ¿Cuál es el resultado de (-8) × (-4) + (-12)?</p>
+            <button onclick="checkAnswer(this, true, '(-8) × (-4) = +32, luego 32 + (-12) = 20')">A. 20</button>
+            <button onclick="checkAnswer(this, false)">B. -20</button>
+            <button onclick="checkAnswer(this, false)">C. 44</button>
+        </div>
+
+        <!-- Pregunta 5: Fracciones -->
+        <div class="question">
+            <p>5. Simplifica la fracción 24/36:</p>
+            <button onclick="checkAnswer(this, true, 'MCD(24,36) = 12, por lo tanto 24/36 = 2/3')">A. 2/3</button>
+            <button onclick="checkAnswer(this, false)">B. 3/4</button>
+            <button onclick="checkAnswer(this, false)">C. 4/6</button>
+        </div>
+
+        <!-- Pregunta 6: Sistema de ecuaciones -->
+        <div class="question">
+            <p>6. En el sistema x + y = 8 y x - y = 2, el valor de x es:</p>
+            <button onclick="checkAnswer(this, true, 'Sumando las ecuaciones: 2x = 10, entonces x = 5')">A. 5</button>
+            <button onclick="checkAnswer(this, false)">B. 3</button>
+            <button onclick="checkAnswer(this, false)">C. 6</button>
+        </div>
+
+        <!-- Pregunta 7: Proporcionalidad -->
+        <div class="question">
+            <p>7. Si 3 libros cuestan $45,000, ¿cuánto cuestan 7 libros?</p>
+            <button onclick="checkAnswer(this, true, 'Regla de tres: 3 libros = $45,000, entonces 7 libros = $105,000')">A. $105,000</button>
+            <button onclick="checkAnswer(this, false)">B. $135,000</button>
+            <button onclick="checkAnswer(this, false)">C. $126,000</button>
+        </div>
+
+        <!-- Pregunta 8: Teorema de Pitágoras -->
+        <div class="question">
+            <p>8. En un triángulo rectángulo con catetos de 3 y 4, la hipotenusa mide:</p>
+            <button onclick="checkAnswer(this, true, 'h = √(3² + 4²) = √(9 + 16) = √25 = 5')">A. 5</button>
+            <button onclick="checkAnswer(this, false)">B. 7</button>
+            <button onclick="checkAnswer(this, false)">C. 6</button>
+        </div>
+
+        <!-- Pregunta 9: Porcentajes -->
+        <div class="question">
+            <p>9. El 15% de 240 es:</p>
+            <button onclick="checkAnswer(this, true, '15% de 240 = (15/100) × 240 = 36')">A. 36</button>
+            <button onclick="checkAnswer(this, false)">B. 32</button>
+            <button onclick="checkAnswer(this, false)">C. 40</button>
+        </div>
+
+        <!-- Pregunta 10: Factorización -->
+        <div class="question">
+            <p>10. Factoriza la expresión x² - 9:</p>
+            <button onclick="checkAnswer(this, true, 'Es una diferencia de cuadrados: x² - 9 = (x + 3)(x - 3)')">A. (x + 3)(x - 3)</button>
+            <button onclick="checkAnswer(this, false)">B. (x - 9)(x + 1)</button>
+            <button onclick="checkAnswer(this, false)">C. (x + 9)(x - 1)</button>
+        </div>
+
+        <!-- Pregunta 11: Estadística -->
+        <div class="question">
+            <p>11. La media aritmética de 5, 7, 9, 11, 13 es:</p>
+            <button onclick="checkAnswer(this, true, 'Media = (5+7+9+11+13)/5 = 45/5 = 9')">A. 9</button>
+            <button onclick="checkAnswer(this, false)">B. 8</button>
+            <button onclick="checkAnswer(this, false)">C. 10</button>
+        </div>
+
+        <!-- Pregunta 12: Volúmenes -->
+        <div class="question">
+            <p>12. El volumen de un cubo con arista de 4 cm es:</p>
+            <button onclick="checkAnswer(this, true, 'V = a³ = 4³ = 64 cm³')">A. 64 cm³</button>
+            <button onclick="checkAnswer(this, false)">B. 48 cm³</button>
+            <button onclick="checkAnswer(this, false)">C. 16 cm³</button>
+        </div>
+
+        <!-- Pregunta 13: Desigualdades -->
+        <div class="question">
+            <p>13. Resuelve la desigualdad 2x + 3 > 11:</p>
+            <button onclick="checkAnswer(this, true, '2x > 11 - 3, 2x > 8, x > 4')">A. x > 4</button>
+            <button onclick="checkAnswer(this, false)">B. x < 4</button>
+            <button onclick="checkAnswer(this, false)">C. x > 7</button>
+        </div>
+
+        <!-- Pregunta 14: Raíces cuadradas -->
+        <div class="question">
+            <p>14. ¿Cuál es el valor de √144?</p>
+            <button onclick="checkAnswer(this, true, '√144 = 12, porque 12² = 144')">A. 12</button>
+            <button onclick="checkAnswer(this, false)">B. 14</button>
+            <button onclick="checkAnswer(this, false)">C. 16</button>
+        </div>
+
+        <!-- Pregunta 15: Funciones lineales -->
+        <div class="question">
+            <p>15. En la función y = 2x + 3, cuando x = 5, el valor de y es:</p>
+            <button onclick="checkAnswer(this, true, 'y = 2(5) + 3 = 10 + 3 = 13')">A. 13</button>
+            <button onclick="checkAnswer(this, false)">B. 11</button>
+            <button onclick="checkAnswer(this, false)">C. 8</button>
+        </div>
+
+        <!-- Pregunta 16: Ángulos -->
+        <div class="question">
+            <p>16. Dos ángulos complementarios suman:</p>
+            <button onclick="checkAnswer(this, true, 'Los ángulos complementarios siempre suman 90°')">A. 90°</button>
+            <button onclick="checkAnswer(this, false)">B. 180°</button>
+            <button onclick="checkAnswer(this, false)">C. 360°</button>
+        </div>
+
+        <!-- Pregunta 17: Notación científica -->
+        <div class="question">
+            <p>17. 0.0003 en notación científica es:</p>
+            <button onclick="checkAnswer(this, true, '0.0003 = 3 × 10^(-4)')">A. 3 × 10^(-4)</button>
+            <button onclick="checkAnswer(this, false)">B. 3 × 10^(-3)</button>
+            <button onclick="checkAnswer(this, false)">C. 0.3 × 10^(-3)</button>
+        </div>
+
+        <!-- Pregunta 18: Probabilidad -->
+        <div class="question">
+            <p>18. Al lanzar un dado, la probabilidad de obtener un número par es:</p>
+            <button onclick="checkAnswer(this, true, 'Números pares: 2, 4, 6. Probabilidad = 3/6 = 1/2')">A. 1/2</button>
+            <button onclick="checkAnswer(this, false)">B. 1/3</button>
+            <button onclick="checkAnswer(this, false)">C. 2/3</button>
+        </div>
+
+        <!-- Pregunta 19: Expresiones algebraicas -->
+        <div class="question">
+            <p>19. Simplifica: 3a + 2b - a + 5b</p>
+            <button onclick="checkAnswer(this, true, 'Agrupando términos semejantes: 3a - a + 2b + 5b = 2a + 7b')">A. 2a + 7b</button>
+            <button onclick="checkAnswer(this, false)">B. 4a + 7b</button>
+            <button onclick="checkAnswer(this, false)">C. 2a + 3b</button>
+        </div>
+
+        <!-- Pregunta 20: Escalas -->
+        <div class="question">
+            <p>20. En un mapa con escala 1:50,000, una distancia de 2 cm representa:</p>
+            <button onclick="checkAnswer(this, true, '2 cm × 50,000 = 100,000 cm = 1 km en la realidad')">A. 1 km</button>
+            <button onclick="checkAnswer(this, false)">B. 500 m</button>
+            <button onclick="checkAnswer(this, false)">C. 2 km</button>
+        </div>
+
+        <!-- Resultado final -->
+        <div id="result" style="display:none;">
+            <h2 id="score-display"></h2>
+            <button onclick="restartQuiz()" class="restart-button">🔄 Reiniciar Matemáticas</button>
+            <button onclick="goToMenu()" class="restart-button" style="background: linear-gradient(145deg, #6c5ce7 0%, #a29bfe 100%) !important;">📚 Menú Principal</button>
+        </div>
+    </div>
+
+    <script src="preguntas.js"></script>
+</body>
+</html>

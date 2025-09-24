@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador ICFES</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+  <!--  <style>
+    .contenedor {
+      text-align: center;
+      /* centra el contendioen linea 
+    horizontalmente */
+      width: 500px;
+      /* anchi del contenedor */
+      border: 1px solid #08eaf1d0;
+      /* solo para visualizar el contenedor*/
+    }
+
+    .mi-imagen {
+      display: block;
+      /*convierte la imagen en un elemento 
+    del bloque */
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #34495e;
+      margin-top: 30px;
+    }
+
+    .quiz-section {
+      max-width: 700px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .question {
+      margin-bottom: 30px;
+    }
+
+    .question p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 6px 0;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      background-color: #3498db;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  </style> -->
+  <!-- Registro -->
+  <div id="registro">
+    <h2>Registro</h2>
+    <form id="formRegistro">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+
+  <!-- Menú de grados (oculto al inicio) -->
+  <div id="menuGrados" style="display:none;">
+    <h2>Selecciona tu grado</h2>
+    <ul>
+      <li><a href="GRADO_6/menu.html">Grado 6</a></li>
+      <li><a href="GRADO_7/menu.html">Grado 7</a></li>
+      <li><a href="GRADO_8/menu.html">Grado 8</a></li>
+      <li><a href="GRADO_9/menu.html">Grado 9</a></li>
+      <li><a href="ESTRUCTURACION/">estructuracion</a></li>
+    </ul>
+  </div>
+  <header>
+    <h1>ICFES AL MÀXIMO</h1>
+    <h2>Entendiendo las preguntas icfes de español y matematicas(grado 6)</h2>
+  </header>
+  <p style="text-align: center;">las preguntas tipo icfes son instrumentos de evaluacion cuidadosamente diseñados para
+    medir el nivel de compresion, analisis y aplicacion de los conocimientos y habilidades
+    que has adquirido a lo largo de tu proceso de aprendizaje en el aula.
+    cada pregunta tipo icfes esta intrinsecamente relacionada con los contenidos curriculares que has
+    trabajado con tus profesores. la clave para abordar con exito las preguntas tipo icfes radica
+    en una lectura atenta y compresiva de cada enunciado. cada palabra, cada frase, ha sido cuidadosamente
+    para presentar una situacion, un problema o una interrogante especifica.
+  <div class="contenedor">
+    <style>
+      .centrar {
+        text-align: center;
+      }
+    </style>
+    <div class="centrar">
+      <img src="icfes variado.jpg" alt="centrar" width="200" class="mi-imagen">
+    </div>
+  </div>
+
+  <main>
+    </section>
+
+    <section id="espanol-icfes">
+      <p style="text-align: center;">
+      <h2>Área de Español </h2>
+      <p>Las preguntas de Español en el ICFES para sexto grado se centran en evaluar
+        tu comprensión y análisis del lenguaje en diferentes contextos. Esto incluye:</p>
+      <ul>
+        <li><strong>Comprensión Lectora:</strong>
+          Entender el significado de textos, identificar ideas principales y secundarias, reconocer la intención del
+          autor y hacer inferencias.</li>
+        <li><strong>Gramática y Ortografía:</strong>
+          Conocer y aplicar las reglas básicas de la gramática (concordancia, uso de tiempos verbales, etc.) y la
+          ortografía (acentuación, puntuación, uso de letras).</li>
+        <li><strong>Vocabulario:</strong>
+          Comprender el significado de diferentes palabras y expresiones, identificar sinónimos y antónimos, y entender
+          el lenguaje figurado.</li>
+        <li><strong>Tipos de Textos:</strong>
+          Reconocer las características de diferentes tipos de textos (narrativos, informativos, descriptivos, etc.) y
+          su propósito comunicativo.</li>
+        <li><strong>Literatura:</strong>
+          Acercamiento a obras literarias sencillas, identificación de personajes, ambientes y temas principales.</li>
+      </ul>
+      <p>En las preguntas, podrías encontrar textos cortos (cuentos, fragmentos, poemas, noticias) seguidos de preguntas
+        que te piden analizar su contenido, identificar elementos lingüísticos o reflexionar sobre su significado.</p>
+    </section>
+    </p>
+
+    <section id="matematicas-icfes">
+      <h2>Área de matematicas</h2>
+      <p>Las preguntas de Matemáticas en el ICFES para sexto grado buscan evaluar tu comprensión de conceptos
+        matemáticos fundamentales y tu capacidad para aplicarlos en la resolución de problemas. Los temas principales
+        que suelen abordarse son:</p>
+      <ul>
+        <li><strong>Números y Operaciones:</strong>
+          Comprender el sistema de numeración decimal, realizar operaciones básicas (suma, resta, multiplicación,
+          división) con números naturales, fracciones y decimales.</li>
+        <li><strong>Geometría:</strong>
+          Identificar y describir figuras geométricas básicas (puntos, líneas, ángulos, triángulos, cuadrados,
+          círculos), calcular perímetros y áreas en situaciones sencillas.</li>
+        <li><strong>Medición:</strong>
+          Utilizar unidades de medida de longitud, masa, tiempo y capacidad en la resolución de problemas.</li>
+        <li><strong>Estadística y Probabilidad:</strong>
+          Interpretar información presentada en tablas y gráficos, comprender conceptos básicos de probabilidad
+          (posible, imposible, seguro).</li>
+        <li><strong>Patrones y Álgebra Elemental:</strong>
+          Identificar y describir patrones numéricos y geométricos, introducir el concepto de variable y ecuaciones
+          sencillas.</li>
+        <li><strong>Resolución de Problemas:</strong>
+          Aplicar los conceptos matemáticos aprendidos para analizar y resolver problemas de la vida cotidiana.</li>
+      </ul>
+      <p>En las preguntas, encontrarás situaciones problemáticas o ejercicios que te pedirán aplicar tus conocimientos
+        matemáticos para encontrar la solución correcta.</p>
+    </section>
+
+
+    <section id="ingles-icfes">
+      <h2>Área de ingles</h2>
+      <p>en esta seccion, los estudiantes practican el uso del
+        idioma de ingles a travez de ejercicios vocabularios, gramática
+
+        y compresión de lectura. se busca la habilidad para leer y entender textos cortos, construir
+        frases correctamente y ampliar el conocimiento de palabras comunes
+      </p>
+
+      <p>tambien se promueve la compresión auditiva y la capcidad para responder preguntas simples
+        sobre situaciones cotidianas, lo cual es esencial para comunicarse en un segundo idioma
+      </p>
+
+    </section>
+
+
+    <section id="ciencias ciudadanas-icfes">
+      <h2>Área de ciencias ciudadanas</h2>
+      <p>esta materia esta enfocada en formar ciudadanos responsables, criticos y participativos.
+        Aqui se enseñan conceptos fundamentales como la democracia, los derechos
+        humanos, la convivencia, el respecto por ls normas y el funcionamiento de la constitución
+        politica.
+      </p>
+      <p>Ademas, los estudiantes aprenden sobre valores como la equidad, lajusticia y la solidaridad
+
+        y como aplicarlos en situaciones de la vida cotidiana y dentro de su comunidad escolar y familiar.
+      </p>
+    </section>
+
+
+    <section id="naturales-icfes">
+      <h2>Área de naturales</h2>
+
+      <p>En ciencias naturales, exploran el mundo físico y biológico
+        que los rodea. Se estudian temas como el cuerpo humano, los ecosistemas, la energia, la materia
+        y sus transformaciones, con el fin de comprender fenómenos naturales y como interactuan los seres vivos
+        con el entorno. </p>
+
+      <p>Esta área fomenta la curiosidad, el pensamiento, cientifico,la observacion y la experimentación
+        permitiendoa los estudiantes construir explicaciones sobre los procesos naturales y tecnologicos
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Explicación sobre las Preguntas ICFES para Sexto Grado</p>
+  </footer>
+
+  <script src="preguntas.js"></script>
+</body>
+
+</html> 
